@@ -7,11 +7,16 @@ ol {
   padding: 0;
 }
 
-p, small, span, a {
+p, small, span, a, form, input, textarea, option {
   font-family: "Poppins", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 36px;
   text-decoration: none;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
 }
 
 body {
@@ -35,6 +40,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 857px;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #F6F5F0;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #F6F5F0;
+}
+
+::placeholder {
+  color: #F6F5F0;
 }
 
 .menu {
@@ -79,6 +98,239 @@ body {
 }
 .head-hero .logo-center {
   margin-bottom: 30px;
+}
+
+.footer-section {
+  padding: 80px 0px 0px;
+  background: #3B3559;
+  color: #F6F5F0;
+  font-size: 20px;
+}
+.footer-section-widget {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer-section-widget-list {
+  width: 30%;
+}
+.footer-section-widget-list:last-child {
+  width: 40%;
+}
+.footer-section-widget-list .title {
+  margin-bottom: 35px;
+}
+.footer-section-widget-list .item .link-footer {
+  color: #F6F5F0;
+  display: block;
+  margin-bottom: 8px;
+}
+.footer-section-widget-list .item .link-footer:hover {
+  color: #F29CAB;
+}
+.footer-section-widget-list .item.address {
+  margin-top: 50px;
+}
+.footer-section-widget-list .item.address .link-footer {
+  color: #F29CAB;
+}
+.footer-section-widget-list .item.address .link-footer:hover {
+  color: #E49FC6;
+}
+.footer-section-widget-list .contact .input-action,
+.footer-section-widget-list .contact .input-action-text {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #F6F5F0;
+  background-color: transparent;
+  font-size: 20px;
+  color: #F6F5F0;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+.footer-section-widget-list .contact .input-action:focus,
+.footer-section-widget-list .contact .input-action-text:focus {
+  outline: none;
+  border-radius: 0px;
+}
+.footer-section-widget-list .contact .input-action-text,
+.footer-section-widget-list .contact .input-action-text-text {
+  height: 160px;
+}
+.footer-section .footnote {
+  border-top: 1px solid;
+  padding-top: 30px;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section .footnote img {
+  margin-right: 10px;
+}
+
+.second {
+  position: relative;
+}
+.second .container {
+  width: 50%;
+}
+.second .top-ornament::after, .second .top-ornament::before {
+  content: "";
+  background-image: url("../../img/leaf-many.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: -144px;
+  height: 320px;
+  width: 380px;
+  background-size: contain;
+  background-position: 62px 0px;
+}
+.second .top-ornament::before {
+  right: unset;
+  left: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.second h3, .second h4 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.second h3 {
+  color: #3B3559;
+  font-size: 35px;
+}
+.second h4 {
+  color: #E49FC6;
+  font-size: 26px;
+}
+.second .paragraph {
+  margin-bottom: 30px;
+  position: relative;
+}
+.second .paragraph.one::before, .second .paragraph.two::before {
+  content: "";
+  background-image: url("../../img/leaf-single.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -250px;
+  bottom: 0px;
+  height: 135px;
+  width: 200px;
+  background-size: contain;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.second .paragraph.two::before {
+  left: unset;
+  right: -200px;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  bottom: -60px;
+}
+.second .more {
+  position: relative;
+  margin-top: 180px;
+}
+.second .more p {
+  font-size: 16px;
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 600;
+}
+.second .more p::before {
+  content: "";
+  background-image: url("../../img/leaf-devide.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 500px;
+  height: 264px;
+  position: absolute;
+  left: 17%;
+  top: -116px;
+  z-index: -1;
+}
+.second .more .more-link {
+  width: 40%;
+  margin: 40px auto 0px;
+  display: block;
+  text-align: center;
+  color: #171717;
+  position: relative;
+}
+.second .more .more-link::before {
+  content: "";
+  background-image: url("../../img/strok-strong.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  left: 0px;
+  z-index: -1;
+  top: -8px;
+}
+.second .bottom-ornament {
+  background-image: url("../../img/flower-bg.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 394px;
+  background-position: 0px -166px;
+}
+
+.third {
+  background-color: #EEEAF4;
+  padding: 100px 0px;
+  position: relative;
+}
+.third h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #3B3559;
+  font-size: 35px;
+}
+.third h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #E49FC6;
+  font-size: 26px;
+}
+.third p {
+  position: relative;
+  z-index: 3;
+}
+.third .column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 3;
+  position: relative;
+  margin-bottom: 140px;
+}
+.third .column-text {
+  width: 45%;
+}
+.third::before, .third::after {
+  content: "";
+  background-image: url("../../img/waves.png");
+  background-repeat: no-repeat;
+  width: 668px;
+  height: 500px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-size: contain;
+  z-index: 1;
+}
+.third::after {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  right: unset;
+  left: 0px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

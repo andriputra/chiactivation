@@ -22,6 +22,17 @@ body {
     background-size: cover;
     height: 857px;
 }
+::-webkit-input-placeholder { /* Edge */
+    color: $light;
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $light;
+}
+  
+::placeholder {
+    color: $light;
+}
 
 .menu{
     padding: 10px 0px;
@@ -65,6 +76,248 @@ body {
         margin-bottom: 30px;
     }
 }
+
+.footer-section{
+    padding: 80px 0px 0px;
+    background: $navy;
+    color: $light;
+    font-size: 20px;
+    &-widget{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &-list{
+            width: 30%;
+            &:last-child{
+                width: 40%;
+            }
+            .title{
+                margin-bottom: 35px;
+            }
+            .item{
+                .link-footer{
+                    color: $light;
+                    display: block;
+                    margin-bottom: 8px;
+                    &:hover{
+                        color: $peach;
+                    }
+                }
+                &.address{
+                    margin-top: 50px;
+                    .link-footer{
+                        color: $peach;
+                        &:hover{
+                            color: $pink;
+                        }
+                    }
+                }
+            }
+            .contact{
+                .input-action,
+                .input-action-text{
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid $light;
+                    background-color: transparent;
+                    font-size: 20px;
+                    color: $light;
+                    padding: 5px 10px;
+                    margin-bottom: 20px;
+                    &:focus{
+                        outline: none;
+                        border-radius: 0px;
+                    }
+                    &-text{
+                        height: 160px;
+                    }
+                }
+            }
+        }
+    }
+    .footnote{
+        border-top: 1px solid;
+        padding-top: 30px;
+        margin-top: 50px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+
+.second{
+    position: relative;
+    .container{
+        width: 50%;
+    }
+    .top-ornament{
+        &::after,
+        &::before{
+            content: '';
+            background-image: url('../../img/leaf-many.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 0;
+            top: -144px;
+            height: 320px;
+            width: 380px;
+            background-size: contain;
+            background-position: 62px 0px;
+        }
+        &::before{
+            right: unset;
+            left: 0px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+    h3, h4{
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h3{
+        color: $navy;
+        font-size: 35px;
+    }
+    h4{
+        color: $pink;
+        font-size: 26px;
+    }
+    .paragraph{
+        margin-bottom: 30px;
+        position: relative;
+        &.one, &.two{
+            &::before{
+                content: '';
+                background-image: url('../../img/leaf-single.png');
+                background-repeat: no-repeat;
+                position: absolute;
+                left: -250px;
+                bottom: 0px;
+                height: 135px;
+                width: 200px;
+                background-size: contain;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+        }
+        &.two{
+            &::before{
+                left: unset;
+                right: -200px;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                bottom: -60px;
+            }
+        }
+    }
+    .more{
+        position: relative;
+        margin-top: 180px;
+        p{
+            font-size: 16px;
+            width: 50%;
+            margin: 0px auto;
+            text-align: center;
+            line-height: 24px;
+            font-weight: 600;
+            &::before{
+                content: '';
+                background-image: url('../../img/leaf-devide.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 500px;
+                height: 264px;
+                position: absolute;
+                left: 17%;
+                top: -116px;
+                z-index: -1;
+            }
+        }
+        .more-link{
+            width: 40%;
+            margin: 40px auto 0px;
+            display: block;
+            text-align: center;
+            color: $blackDark;
+            position: relative;
+            &::before{
+                content: '';
+                background-image: url('../../img/strok-strong.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                width: 300px;
+                height: 65px;
+                left: 0px;
+                z-index: -1;
+                top: -8px;
+            }
+        }
+    }
+    .bottom-ornament{
+        background-image: url('../../img/flower-bg.png');
+        background-repeat: repeat-x;
+        width: 100%;
+        height: 394px;
+        background-position: 0px -166px;
+    }
+}
+.third{
+    background-color: #EEEAF4;
+    padding: 100px 0px;
+    position: relative;
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        color: $navy;
+        font-size: 35px;
+    }
+    h4{
+        text-align: center;
+        text-transform: uppercase;
+        color: $pink;
+        font-size: 26px;
+    }
+    p{
+        position: relative;
+        z-index: 3;
+    }
+    .column{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 3;
+        position: relative;
+        margin-bottom: 140px;
+        &-text{
+            width: 45%;
+        }
+    }
+    &::before, &::after{
+        content: '';
+        background-image: url('../../img/waves.png');
+        background-repeat: no-repeat;
+        width: 668px;
+        height: 500px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        background-size: contain;
+        z-index: 1;
+    }
+    &::after{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        right: unset;
+        left: 0px;
+    }
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
     
