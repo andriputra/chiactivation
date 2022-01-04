@@ -35,7 +35,7 @@ span {
 
 body {
   font: 100% Helvetica, sans-serif;
-  background-color: #F6F5F0;
+  background-color: #F8F4F4;
   color: #505050;
 }
 
@@ -68,6 +68,7 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+  color: #3B3559;
 }
 
 .top-content {
@@ -584,6 +585,7 @@ body {
 }
 .level.understanding {
   background-color: #F5EAED;
+  padding-top: 0px;
 }
 .level.understanding.activation {
   background-color: #ece3ed;
@@ -957,10 +959,19 @@ body {
   padding: 100px 0px;
   background-color: #F5EAED;
 }
+.testimonial.level2 {
+  padding-bottom: 0px;
+}
 .testimonial h2 {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 50px;
+}
+.testimonial h2 span {
+  font-family: "Dancing Script", cursive;
+  text-transform: lowercase;
+  letter-spacing: normal;
+  font-size: 34px;
 }
 .testimonial .quote {
   border: 1px solid #707070;
@@ -1281,6 +1292,8 @@ body {
 .quantum h2 {
   letter-spacing: 5px;
   color: #3B3559;
+  position: relative;
+  z-index: 2;
 }
 .quantum h2 span {
   display: block;
@@ -1478,6 +1491,140 @@ body {
 }
 .sold-level1 .level-content-item-list {
   margin: 0px 20px;
+}
+
+.level-2 h3 {
+  letter-spacing: 5px;
+  color: #3B3559;
+  font-size: 32px;
+}
+.level-2 .paragraph p {
+  column-count: 2;
+  column-gap: 30px;
+}
+.level-2 .butterfly {
+  background: url("../../img/butterfly-pink.svg") no-repeat;
+  background-size: contain;
+  display: block;
+  width: 200px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+.expanding {
+  background-color: #F5EAED;
+  padding: 100px 0px 300px;
+  position: relative;
+}
+.expanding .paragraph h2 {
+  letter-spacing: 5px;
+  font-size: 35px;
+}
+.expanding .paragraph h2 span {
+  font-family: "Dancing Script", cursive;
+  text-transform: lowercase;
+  letter-spacing: normal;
+  font-size: 50px;
+}
+.expanding .paragraph p {
+  column-gap: 30px;
+  column-count: 2;
+}
+.expanding::after {
+  content: "";
+  background-image: url("../../img/flower-bg-long.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 442px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.self-healing {
+  padding: 150px 0px 100px;
+}
+.self-healing .top-ornament::before, .self-healing .top-ornament::after {
+  top: 70px !important;
+}
+.self-healing .container.special {
+  width: 70%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.self-healing .container.special .column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.self-healing .container.special .column .item {
+  text-align: center;
+}
+.self-healing .container.special .column .item span {
+  display: block;
+  color: #E49FC6;
+  text-transform: uppercase;
+  font-family: "Magnat-HeadRegular";
+  letter-spacing: 3px;
+  font-size: 26px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.self-healing .container.special .column .item span:last-child {
+  margin-bottom: 0px;
+}
+.self-healing .container .paragraph p {
+  text-align: center;
+  column-count: 1;
+}
+
+.abilities {
+  padding: 100px 0px;
+  position: relative;
+}
+.abilities::after, .abilities::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/half-butterfly.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 220px;
+  height: 400px;
+  right: 0px;
+  top: 17%;
+  z-index: -1;
+}
+.abilities::before {
+  left: 0px;
+  right: unset;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.abilities .container {
+  width: 60%;
+}
+.abilities .paragraph h2 {
+  letter-spacing: 5px;
+}
+.abilities .paragraph p {
+  column-gap: 30px;
+  column-count: 2;
+}
+.abilities .paragraph p a {
+  color: #3B3559;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  background: url("../../img/strok-strong.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  padding: 12px 0px;
+  font-family: "Magnat-HeadRegular";
+  text-align: center;
+  margin: 20px auto 0px;
+  background-position: center;
+  font-style: italic;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
