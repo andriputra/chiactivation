@@ -686,6 +686,7 @@ body {
   z-index: 1;
 }
 .level .level-content-item-list .dots a {
+  font-family: "Magnat-HeadRegular";
   position: relative;
   margin: 0px;
   padding: 0px 0px;
@@ -693,7 +694,9 @@ body {
   line-height: 20px;
   margin-top: 43px;
   display: block;
-  color: #171717;
+  color: #3B3559;
+  text-transform: uppercase;
+  font-style: italic;
 }
 .level .level-content-item-list .dots.two::after {
   background-image: url("../../img/dots-purple.png");

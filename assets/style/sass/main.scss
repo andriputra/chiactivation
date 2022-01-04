@@ -652,6 +652,7 @@ body {
                         z-index: 1;
                     }
                     a{
+                        font-family: "Magnat-HeadRegular";
                         position: relative;
                         margin: 0px;
                         padding: 0px 0px;
@@ -659,7 +660,9 @@ body {
                         line-height: 20px;
                         margin-top: 43px;
                         display: block;
-                        color: $blackDark;
+                        color: $navy;
+                        text-transform: uppercase;
+                        font-style: italic;
                     }
                     &.two{
                         &::after{
