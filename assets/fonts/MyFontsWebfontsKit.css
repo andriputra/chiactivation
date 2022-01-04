@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4273100, 2021-12-29T22:27:43-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Magnat-HeadRegular by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/magnat/head-regular/
+ * Copyright: Copyright © 2019 by Rene Bieder. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/4133cc");
+  
+@font-face {
+  font-family: "Magnat-HeadRegular";
+  src: url('webFonts/MagnatHeadRegular/font.woff2') format('woff2'), url('webFonts/MagnatHeadRegular/font.woff') format('woff');
+}
+

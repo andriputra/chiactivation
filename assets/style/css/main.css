@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap");
 html,
 body,
 ul,
@@ -7,7 +8,7 @@ ol {
   padding: 0;
 }
 
-p, small, span, a, form, input, textarea, option {
+p, small, a, form, input, textarea, option {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -17,6 +18,19 @@ p, small, span, a, form, input, textarea, option {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
+  font-family: "Magnat-HeadRegular";
+  letter-spacing: 15px;
+  font-weight: 700;
+  font-style: italic;
+  color: #3B3559;
+}
+
+span {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 body {
@@ -33,6 +47,27 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.column-2 {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .top-content {
@@ -98,6 +133,17 @@ body {
 }
 .head-hero .logo-center {
   margin-bottom: 30px;
+}
+.head-hero h1 {
+  font-size: 70px;
+  color: #3B3559;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.head-hero span.head-title-page {
+  font-family: "Dancing Script", cursive;
+  font-size: 90px;
+  color: #3B3559;
 }
 
 .footer-section {
@@ -172,6 +218,15 @@ body {
 
 .second {
   position: relative;
+}
+.second.video {
+  padding-bottom: 100px;
+}
+.second.video h2 {
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  margin-bottom: 50px;
+  font-weight: 900;
 }
 .second .container {
   width: 50%;
@@ -527,22 +582,38 @@ body {
   position: relative;
   padding: 100px 0px 150px;
 }
+.level.understanding {
+  background-color: #F5EAED;
+}
+.level.understanding.activation {
+  background-color: #ece3ed;
+  background-position: 0px -379px;
+}
+.level.understanding.activation .level-content {
+  padding-top: 0px;
+}
 .level::after {
   content: "";
   background-image: url("../../img/bg-section.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 1700px;
   width: 100%;
   position: absolute;
   bottom: 0px;
-  z-index: -1;
+  z-index: 1;
   left: 0px;
   background-position: center;
 }
 .level h2 {
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #3B3559;
+  font-size: 35px;
+  letter-spacing: 9px;
+  font-weight: 600;
 }
 .level-text-top {
   width: 50%;
@@ -563,9 +634,12 @@ body {
 .level-text-top .brush p {
   margin-top: 0px;
   padding: 20px 0px;
+  text-transform: uppercase;
 }
 .level .level-content {
   padding-top: 200px;
+  z-index: 2;
+  position: relative;
 }
 .level .level-content-item {
   display: flex;
@@ -624,6 +698,52 @@ body {
 }
 .level .level-content-item-list .dots.three::after {
   background-image: url("../../img/dots-blue.png");
+}
+.level .level-content-item-list:hover {
+  background-color: #F6F5F0;
+}
+.level .level-content-item .top h2 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+.level .level-content-item .top h2 span {
+  font-family: "Dancing Script", cursive;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  font-size: 34px;
+}
+
+.find-chi {
+  position: relative;
+  padding-bottom: 100px;
+}
+.find-chi::after, .find-chi::before {
+  content: "";
+  background-image: url("../../img/leaf-many.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: -140px;
+  height: 320px;
+  width: 380px;
+  background-size: contain;
+  background-position: 62px 0px;
+  z-index: -2;
+}
+.find-chi::before {
+  right: unset;
+  left: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.find-chi .brush a {
+  color: #171717;
+  text-transform: uppercase;
+  line-height: 26px;
+  padding: 27px 0px;
+  display: inline-block;
 }
 
 .second.understanding {
@@ -732,6 +852,7 @@ body {
   width: 380px;
   background-size: contain;
   background-position: 62px 0px;
+  z-index: -2;
 }
 .sixth.understanding::before {
   right: unset;
@@ -759,6 +880,13 @@ body {
   right: 0px;
   bottom: -116px;
   z-index: -1;
+}
+
+.page.activation::before, .page.activation::after {
+  content: none;
+}
+.page.activation .paragraph p::after {
+  content: none;
 }
 
 .seventh.understanding {
@@ -893,6 +1021,463 @@ body {
 }
 .testimonial .owl-nav .owl-next span {
   display: none;
+}
+
+.activation {
+  background-image: url("../../img/bg-section.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 350px;
+  background-position: bottom center;
+  position: relative;
+}
+.activation::after {
+  content: "";
+  background-image: url("../../img/flower-bg-long.png");
+  background-repeat: repeat;
+  background-size: contain;
+  width: 100%;
+  height: 400px;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+.activation .activation-top {
+  margin-bottom: 140px;
+}
+.activation .activation-top p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.activation .activation-top-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.activation .activation-top-list .item {
+  text-align: center;
+}
+.activation .activation-top-list .item .title {
+  margin: 20px 0px;
+  line-height: 24px;
+  font-size: 18px;
+}
+.activation .title-head {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  color: #3B3559;
+  letter-spacing: 9px;
+  line-height: 45px;
+}
+.activation .title-head::after {
+  content: "";
+  background-image: url("../../img/sun-devide.png");
+  background-size: contain;
+  width: 140px;
+  height: 70px;
+  position: absolute;
+  top: -85px;
+  left: 40%;
+  background-repeat: no-repeat;
+}
+.activation .title-head span {
+  text-transform: lowercase;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: normal;
+  font-size: 43px;
+}
+.activation .paragraph p {
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+}
+.activation .paragraph .column {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.activation .paragraph .column-half p {
+  margin: 0px;
+  color: #E49FC6;
+}
+.activation .text-special {
+  display: block;
+  font-family: "Magnat-HeadRegular";
+  letter-spacing: 6px;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #3B3559;
+}
+
+.sixth.activation {
+  background-image: none;
+}
+
+.portal, .program {
+  background: #F5EAED;
+  padding: 60px 0px 80px;
+  text-align: center;
+}
+.portal h2, .program h2 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.portal .link, .program .link {
+  position: relative;
+  display: inline-block;
+}
+.portal .link .link-btn, .program .link .link-btn {
+  color: #171717;
+  position: relative;
+  z-index: 1;
+}
+.portal .link .link-btn::after, .program .link .link-btn::after {
+  content: "";
+  background-size: contain;
+  background-image: url("../../img/strok-strong.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 300px;
+  height: 65px;
+  position: absolute;
+  left: -98px;
+  top: -12px;
+  z-index: -1;
+}
+
+.program {
+  background: transparent;
+}
+
+.dot-ornament {
+  position: relative;
+}
+.dot-ornament::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/dots-purple.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 180px;
+  height: 174px;
+  top: -105px;
+  left: 44%;
+  z-index: 2;
+}
+
+.level-up {
+  padding-bottom: 100px;
+}
+.level-up .container {
+  width: 50%;
+}
+.level-up h2 {
+  color: #3B3559;
+  letter-spacing: 8px;
+}
+
+.level-1 {
+  background-image: none;
+  position: relative;
+  padding-top: 100px;
+}
+.level-1::before {
+  background-image: url(../../img/bg-section.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: "";
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+  width: 100%;
+  height: 1190px;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+}
+.level-1 h2 {
+  color: #3B3559;
+  letter-spacing: 10px;
+}
+.level-1 .paragraph p {
+  line-height: 35px;
+}
+.level-1 .paragraph p span {
+  display: block;
+  text-transform: lowercase;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: normal;
+  font-size: 43px;
+  color: #3B3559;
+  padding: 50px 0px;
+}
+.level-1 .paragraph p.text-content {
+  position: relative;
+  margin-bottom: 250px;
+}
+.level-1 .paragraph p.text-content::after {
+  content: "";
+  background-image: url("../../img/butterfly-blue.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  bottom: -212px;
+  left: 36%;
+}
+
+.new-level {
+  padding: 100px 0px;
+  background-color: #F5EAED;
+}
+.new-level .butterfly {
+  background: url("../../img/butterfly.png") no-repeat;
+  background-size: contain;
+  display: block;
+  width: 200px;
+  height: 172px;
+  margin: 0 auto;
+}
+.new-level h2 {
+  margin-bottom: 30px;
+  color: #3B3559;
+  letter-spacing: 5px;
+}
+
+.chakra {
+  padding: 100px 0px;
+}
+.chakra h2 {
+  color: #3B3559;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+  color: #3B3559;
+}
+.chakra .column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.chakra .column .item {
+  margin-right: 30px;
+}
+.chakra .column .item:last-child {
+  margin-right: 0px;
+}
+.chakra .column .item .title {
+  color: #E49FC6;
+  letter-spacing: 3px;
+}
+
+.quantum h2 {
+  letter-spacing: 5px;
+  color: #3B3559;
+}
+.quantum h2 span {
+  display: block;
+  text-transform: lowercase;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: normal;
+  font-size: 43px;
+}
+.quantum .paragraph p {
+  column-count: 1 !important;
+  column-gap: 0px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.chakras {
+  padding-top: 120px !important;
+}
+.chakras::before, .chakras::after {
+  top: 300px !important;
+}
+.chakras h2 {
+  letter-spacing: 5px;
+  position: relative;
+}
+.chakras h2.main-title::before {
+  content: "";
+  background-image: url("../../img/sun-devide.png");
+  position: absolute;
+  top: -84px;
+  left: 43%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 170px;
+  height: 80px;
+}
+.chakras .paragraph {
+  width: 70%;
+  margin: 0 auto;
+}
+.chakras .paragraph p {
+  column-count: 1 !important;
+}
+.chakras .paragraph p::after {
+  content: none !important;
+}
+.chakras .paragraph.one {
+  margin-bottom: 135px;
+}
+
+.healing {
+  padding: 100px 0px 350px;
+  background-color: #F5EAED;
+  position: relative;
+}
+.healing::after {
+  content: "";
+  background-image: url("../../img/flower-bg-long.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 340px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-position: 0px -104px;
+}
+.healing .paragraph h2 {
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+}
+.healing .paragraph p {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.intuitive {
+  position: relative;
+  background-color: #EEEAF4;
+  padding: 100px 0px 200px;
+}
+.intuitive .paragraph {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+.intuitive .paragraph h2 {
+  letter-spacing: 5px;
+  margin-bottom: 0px;
+  font-size: 32px;
+}
+.intuitive .paragraph span {
+  display: block;
+  text-transform: lowercase;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: normal;
+  font-size: 43px;
+  color: #3B3559;
+}
+.intuitive .paragraph::after {
+  content: "";
+  background-image: url("../../img/butterfly-blue.svg");
+  position: absolute;
+  bottom: -156px;
+  left: 40%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 171px;
+  height: 124px;
+}
+
+.course {
+  padding: 100px 0px;
+}
+.course .level-content {
+  z-index: 2;
+  position: relative;
+}
+.course .level-content-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.course .level-content-item-list {
+  width: 28.5%;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid #707070;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+.course .level-content-item-list img {
+  min-width: 30%;
+  height: 78px;
+  margin: 0 auto;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+.course .level-content-item-list p {
+  font-size: 20px;
+}
+.course .level-content-item-list .dots {
+  position: relative;
+}
+.course .level-content-item-list .dots:after {
+  background-image: url("../../img/dots-pink.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: -87px;
+  left: 79px;
+  z-index: 1;
+}
+.course .level-content-item-list .dots a {
+  font-family: "Magnat-HeadRegular";
+  position: relative;
+  margin: 0px;
+  padding: 0px 0px;
+  z-index: 2;
+  line-height: 20px;
+  margin-top: 43px;
+  display: block;
+  color: #3B3559;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.course .level-content-item .top h2 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  line-height: 25px;
+  margin-top: 20px;
+  font-family: "Magnat-HeadRegular";
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-style: italic;
+  color: #3B3559;
+}
+.course .level-content-item .top h2 span {
+  font-family: "Dancing Script", cursive;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  font-size: 34px;
+}
+
+.sold-level1 .level-content-item {
+  justify-content: center;
+}
+.sold-level1 .level-content-item-list {
+  margin: 0px 20px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

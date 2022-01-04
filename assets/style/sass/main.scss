@@ -15,7 +15,22 @@ body {
     width: 80%;
     margin: 0 auto;
 }
-
+.text-left{
+    text-align: left !important; 
+}
+.text-center{
+    text-align: center !important;
+}
+.text-right{
+    text-align: right !important;
+}
+.column-2{
+    column-count: 2;
+    column-gap: 30px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
 .top-content{
     background-image: url('../../img/bg-main.png');
     background-repeat: no-repeat;
@@ -74,6 +89,19 @@ body {
     text-align: center;
     .logo-center{
         margin-bottom: 30px;
+    }
+    h1{
+        font-size: 70px;
+        color: $navy;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+    }
+    span{
+        &.head-title-page{
+            font-family: 'Dancing Script', cursive;
+            font-size: 90px;
+            color: $navy;
+        }
     }
 }
 
@@ -151,6 +179,15 @@ body {
 
 .second{
     position: relative;
+    &.video{
+        padding-bottom: 100px;
+        h2{
+            text-transform: uppercase;
+            letter-spacing: 9px;
+            margin-bottom: 50px;
+            font-weight: 900;
+        }
+    }
     .container{
         width: 50%;
     }
@@ -515,22 +552,38 @@ body {
 .level{
     position: relative;
     padding: 100px 0px 150px;
+    &.understanding{
+        background-color: #F5EAED;
+        &.activation{
+            background-color: #ece3ed;
+            background-position: 0px -379px;
+            .level-content{
+                padding-top: 0px;
+            }
+        }
+    }
     &::after{
         content: '';
         background-image: url('../../img/bg-section.png');
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 1700px;
         width: 100%;
         position: absolute;
         bottom: 0px;
-        z-index: -1;
+        z-index: 1;
         left: 0px;
         background-position: center;
     }
     h2{
         text-align: center;
         text-transform: uppercase;
+        margin-bottom: 40px;
+        color: #3B3559;
+        font-size: 35px;
+        letter-spacing: 9px;
+        font-weight: 600;
     }
     &-text-top{
         width: 50%;
@@ -549,11 +602,14 @@ body {
             p{
                 margin-top: 0px;
                 padding: 20px 0px;
+                text-transform: uppercase;
             }
         }
     }
     .level-content{
         padding-top: 200px;
+        z-index: 2;
+        position: relative;
         &-item{
             display: flex;
             flex-wrap: wrap;
@@ -614,7 +670,57 @@ body {
                         }
                     }
                 }
+                &:hover{
+                    background-color: $light;
+                }
             }
+            .top{
+                h2{
+                    font-size: 25px;
+                    letter-spacing: 5px;
+                    line-height: 25px;
+                    margin-top: 20px;
+                    span{
+                        font-family: 'Dancing Script', cursive;
+                        text-transform: capitalize;
+                        letter-spacing: normal;
+                        font-size: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+.find-chi{
+    position: relative;
+    padding-bottom: 100px;
+    &::after,
+    &::before{
+        content: '';
+        background-image: url('../../img/leaf-many.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        top: -140px;
+        height: 320px;
+        width: 380px;
+        background-size: contain;
+        background-position: 62px 0px;
+        z-index: -2;
+    }
+    &::before{
+        right: unset;
+        left: 0px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    .brush{
+        a{
+            color: $blackDark;
+            text-transform: uppercase;
+            line-height: 26px;
+            padding: 27px 0px;
+            display: inline-block;
         }
     }
 }
@@ -742,6 +848,7 @@ body {
             width: 380px;
             background-size: contain;
             background-position: 62px 0px;
+            z-index: -2;
         }
         &::before{
             right: unset;
@@ -771,6 +878,20 @@ body {
                     right: 0px;
                     bottom: -116px;
                     z-index: -1;
+                }
+            }
+        }
+    }
+}
+.page{
+    &.activation{
+        &::before, &::after{
+            content: none;
+        }
+        .paragraph{
+            p{
+                &::after{
+                    content: none;
                 }
             }
         }
@@ -914,7 +1035,470 @@ body {
         }
     }
 }
-
+.activation{
+    background-image: url('../../img/bg-section.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 350px;
+    background-position: bottom center;
+    position: relative;
+    &::after{
+        content: '';
+        background-image: url('../../img/flower-bg-long.png');
+        background-repeat: repeat;
+        background-size: contain;
+        width: 100%;
+        height: 400px;
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        z-index: 1;
+    }
+    .activation-top{
+        margin-bottom: 140px;
+        p{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        &-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .item{
+                text-align: center;
+                .title{
+                    margin: 20px 0px;
+                    line-height: 24px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .title-head{
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        margin-bottom: 50px;
+        color: $navy;
+        letter-spacing: 9px;
+        line-height: 45px;
+        &::after{
+            content: '';
+            background-image: url('../../img/sun-devide.png');
+            background-size: contain;
+            width: 140px;
+            height: 70px;
+            position: absolute;
+            top: -85px;
+            left: 40%;
+            background-repeat: no-repeat;
+        }
+        span{
+            text-transform: lowercase;
+            font-family: "Dancing Script", cursive;
+            letter-spacing: normal;
+            font-size: 43px;
+        }
+    }
+    .paragraph{
+        p{
+            text-align: center;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .column{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            &-half{
+                p{
+                    margin: 0px;
+                    color: $pink;
+                }
+            }
+        }
+    }
+    .text-special{
+        display: block;
+        font-family: "Magnat-HeadRegular";
+        letter-spacing: 6px;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: $navy;
+    }
+}
+.sixth{
+    &.activation{
+        background-image: none;
+    }
+}
+.portal, .program{
+    background: #F5EAED;
+    padding: 60px 0px 80px;
+    text-align: center;
+    h2{
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    .link{
+        position: relative;
+        display: inline-block;
+        .link-btn{
+            color: $blackDark;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: '';
+                background-size: contain;
+                background-image: url('../../img/strok-strong.png');
+                background-repeat: no-repeat;
+                display: block;
+                width: 300px;
+                height: 65px;
+                position: absolute;
+                left: -98px;
+                top: -12px;
+                z-index: -1;
+            }
+        }
+    }
+}
+.program{
+    background: transparent;
+}
+.dot-ornament{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../../img/dots-purple.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 180px;
+        height: 174px;
+        top: -105px;
+        left: 44%;
+        z-index: 2;
+    }
+}
+.level-up{
+    padding-bottom: 100px;
+    .container{
+        width: 50%;
+    }
+    h2{
+        color: $navy;
+        letter-spacing: 8px;
+    }
+}
+.level-1{
+    background-image: none;
+    position: relative;
+    padding-top: 100px;
+    &::before{
+        background-image: url(../../img/bg-section.png);
+        background-repeat: no-repeat;
+        display: block;
+        content: "";
+        -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV";
+        width: 100%;
+        height: 1190px;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+    }
+    h2{
+        color: $navy;
+        letter-spacing: 10px;
+    }
+    .paragraph{
+        p{
+            line-height: 35px;
+            span{
+                display: block;
+                text-transform: lowercase;
+                font-family: "Dancing Script", cursive;
+                letter-spacing: normal;
+                font-size: 43px;
+                color: $navy;
+                padding: 50px 0px;
+            }
+            &.text-content{
+                position: relative;
+                margin-bottom: 250px;
+                &::after{
+                    content: '';
+                    background-image: url('../../img/butterfly-blue.svg');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 180px;
+                    height: 180px;
+                    position: absolute;
+                    bottom: -212px;
+                    left: 36%;
+                }
+            }
+        }
+    }
+}
+.new-level{
+    padding: 100px 0px;
+    background-color: #F5EAED;
+    .butterfly{
+        background: url('../../img/butterfly.png')no-repeat;
+        background-size: contain;
+        display: block;
+        width: 200px;
+        height: 172px;
+        margin: 0 auto;
+    }
+    h2{
+        margin-bottom: 30px;
+        color: $navy;
+        letter-spacing: 5px;
+    }
+}
+.chakra{
+    padding: 100px 0px;
+    h2{
+        color: $navy;
+        margin-bottom: 50px;
+        letter-spacing: 5px;
+        color: $navy;
+    }
+    .column{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .item{
+            margin-right: 30px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            .title{
+                color: $pink;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+.quantum{
+    h2{
+        letter-spacing: 5px;
+        color: $navy;
+        span{
+            display: block;
+            text-transform: lowercase;
+            font-family: "Dancing Script", cursive;
+            letter-spacing: normal;
+            font-size: 43px;
+        }
+    }
+    .paragraph{
+        p{
+            column-count: 1!important;
+            column-gap: 0px;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+.chakras{
+    padding-top: 120px !important;
+    &::before, &::after{
+        top: 300px !important;
+    }
+    h2{
+        letter-spacing: 5px;
+        position: relative;
+        &.main-title{
+            &::before{
+                content: '';
+                background-image: url('../../img/sun-devide.png');
+                position: absolute;
+                top: -84px;
+                left: 43%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 170px;
+                height: 80px;
+            }
+        }
+    }
+    .paragraph{
+        width: 70%;
+        margin: 0 auto;
+        p{
+            column-count: 1 !important;
+            &::after{
+                content: none !important;
+            }
+        }
+        &.one{
+            margin-bottom: 135px;
+        }
+    }
+}
+.healing{
+    padding: 100px 0px 350px;
+    background-color: #F5EAED;
+    position: relative;
+    &::after{
+        content: '';
+        background-image: url('../../img/flower-bg-long.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 340px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        background-position: 0px -104px;
+    }
+    .paragraph{
+        h2{
+            margin-bottom: 30px;
+            letter-spacing: 5px;
+        }
+        p{
+            column-count: 2;
+            column-gap: 30px;
+        }
+    }
+}
+.intuitive{
+    position: relative;
+    background-color: #EEEAF4;
+    padding: 100px 0px 200px;
+    .paragraph{
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        h2{
+            letter-spacing: 5px;
+            margin-bottom: 0px;
+            font-size: 32px;
+        }
+        span{
+            display: block;
+            text-transform: lowercase;
+            font-family: "Dancing Script", cursive;
+            letter-spacing: normal;
+            font-size: 43px;
+            color: $navy;
+        }
+        &::after{
+            content: '';
+            background-image: url('../../img/butterfly-blue.svg');
+            position: absolute;
+            bottom: -156px;
+            left: 40%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 171px;
+            height: 124px;
+        }
+    }
+}
+.course{
+    padding: 100px 0px;
+    .level-content{
+        z-index: 2;
+        position: relative;
+        &-item{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &-list{
+                width: 28.5%;
+                text-align: center;
+                border-radius: 30px;
+                border: 1px solid #707070;
+                padding: 20px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0px 20px;
+                img{
+                    min-width: 30%;
+                    height: 78px;
+                    margin: 0 auto;
+                    display: inline-block;
+                    padding-bottom: 20px;
+                }
+                p{
+                    font-size: 20px;
+                }
+                .dots{
+                    position: relative;
+                    &:after{
+                        background-image: url('../../img/dots-pink.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        content: "";
+                        position: absolute;
+                        height: 200px;
+                        width: 200px;
+                        bottom: -87px;
+                        left: 79px;
+                        z-index: 1;
+                    }
+                    a{
+                        font-family: "Magnat-HeadRegular";
+                        position: relative;
+                        margin: 0px;
+                        padding: 0px 0px;
+                        z-index: 2;
+                        line-height: 20px;
+                        margin-top: 43px;
+                        display: block;
+                        color: $navy;
+                        text-transform: uppercase;
+                        font-style: italic;
+                    }
+                }
+            }
+            .top{
+                h2{
+                    font-size: 25px;
+                    letter-spacing: 5px;
+                    line-height: 25px;
+                    margin-top: 20px;
+                    font-family: "Magnat-HeadRegular";
+                    letter-spacing: 5px;
+                    font-weight: 700;
+                    font-style: italic;
+                    color: $navy;
+                    span{
+                        font-family: 'Dancing Script', cursive;
+                        text-transform: capitalize;
+                        letter-spacing: normal;
+                        font-size: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+.sold-level1{
+    .level-content{
+        &-item{
+            justify-content: center;
+            &-list{
+                margin: 0px 20px;
+            }
+        }
+    }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
     
 }
