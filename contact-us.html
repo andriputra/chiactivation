@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+
+    <!-- Style -->
+    <link rel="stylesheet" href="https://use.typekit.net/pha6qsv.css">
+    <link rel="stylesheet" href="assets/style/css/main.css" />
+
+    <link rel="stylesheet" href="assets/style/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/style/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#headShot").load("head-shot.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div class="top-content">
+        <div id="header"></div>
+        <div class="head-hero">
+            <div class="container">
+                <div class="logo-center">
+                    <img src="./assets/img/logo.png" alt="logo"/>
+                </div>
+                <h1>chi activation</h1>
+                <span class="head-title-page">contact us</span>
+            </div>
+        </div>
+    </div>
+    <section class="contact">
+        <div class="container">
+            <h2 class="uppercase text-center ls-5">How to Contact the Chi Activation Centre</h2>
+            <p class="container-75 text-center">The Chi Activation Centre currently runs courses both at our 100-acre healing centre between Daylesford and Woodend (70 minutes from Melbourne) and at the Ashtanga Yoga Centre of Melbourne in Fitzroy.</p>
+            <div class="butterfly-leafs text-center">
+                <img src="assets/img/butterfly-divider.png" alt="btfrly" class="center-image"/>
+            </div>
+            <p class="container-75 text-center">You can contact us by writing to info@chiactivation.com 
+                Or calling: 1300 853 356 or 0417 328 457 or you can fill out the form below.
+                <br/><br/>
+                We’d love to tell you more and answer any questions you have about our courses.
+            </p>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="container">
+            <h2 class="uppercase ls-5 text-center">find out more about chi activation</h2>
+            <div class="link">
+                <a class="link-visit" href="#">More Info</a>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:20,
+            responsiveClass:true,
+            dots: false,
+            autoplay: true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:true
+                },
+                1000:{
+                    items:3,
+                    nav:true,
+                    loop:true
+                }
+            }
+        })
+    </script>
+</body>

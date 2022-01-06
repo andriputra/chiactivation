@@ -105,6 +105,7 @@ section{
         color: $navy;
         margin-bottom: 0px;
         text-transform: uppercase;
+        line-height: 99px;
     }
     span{
         &.head-title-page{
@@ -587,6 +588,20 @@ section{
         left: 0px;
         background-position: center;
     }
+    &.course-page{
+        padding-top: 0px;
+        &::after{
+            content: none;
+        }
+        .level-content{
+            padding-top: 0px;
+        }
+        .text-pink{
+            color: $pink;
+            margin-top: 70px;
+            margin-bottom: 40px;
+        }
+    }
     h2{
         text-align: center;
         text-transform: uppercase;
@@ -992,7 +1007,7 @@ section{
             font-family: 'Dancing Script', cursive;
             text-transform: lowercase;
             letter-spacing: normal;
-            font-size: 34px;
+            font-size: 66px;
         }
     }
     .quote{
@@ -1934,6 +1949,667 @@ span {
             }
         }
     }
+}
+.course-page-lv{
+    .container{
+        width: 60% !important;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 30px;
+        &-item{
+            flex: 1 0 0;
+            margin: 0px 20px;
+            border: 1px solid #707070;
+            padding: 30px;
+            border-radius: 40px;
+            &:first-child{
+                margin-right: 20px;
+                margin-left: 0px;
+            }
+            &:last-child{
+                margin-left: 20px;
+                margin-right: 0px;
+            }
+            h2{
+                color: $pink;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                font-size: 22px;
+                text-align: center;
+                letter-spacing: 5px;
+                span{
+                    color: $navy;
+                }
+            }
+            .link{
+                text-align: center;
+                &-visit{
+                    color: $navy;
+                    font-family: "Magnat-HeadRegular";
+                    font-style: italic;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        background-image: url('../../img/strok-strong.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 300px;
+                        height: 65px;
+                        position: absolute;
+                        z-index: -1;
+                        left: -77px;
+                        top: -12px;
+                    }
+                }
+            }
+        }
+    }
+}
+.course-heal{
+    background-color: #F8F4F4;
+    .paragraph{
+        width: 60%;
+        margin: 0 auto 50px;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        &-item{
+            flex: 1 0 0;
+            margin-left:20px;
+            margin-right: 20px;
+            &:first-child{
+                margin-right: 20px;
+                margin-left: 0px;
+            }
+            &:last-child{
+                margin-left: 20px;
+                margin-right: 0px;
+            }
+            .link{
+                text-align: center;
+                &-visit{
+                    color: $navy;
+                    font-family: "Magnat-HeadRegular";
+                    font-style: italic;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    position: relative;
+                    z-index: 2;
+                    display: block;
+                    &::after{
+                        content: '';
+                        background-image: url('../../img/strok-strong.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 300px;
+                        height: 65px;
+                        position: absolute;
+                        z-index: -1;
+                        left: 42px;
+                        top: -12px;
+                    }
+                }
+            }
+        }
+    }
+}
+.meditation-one{
+    background-color: #F8F4F4;
+    .top-ornament{
+        &::after, &::before{
+            top: 30px;
+        }
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        &-item{
+            flex: 1 0 0;
+            margin-left:20px;
+            margin-right: 20px;
+            h2{
+                letter-spacing: 5px;
+                font-size: 22px;
+                color: $pink;
+                text-transform: uppercase;
+            }
+            &:first-child{
+                margin-right: 20px;
+                margin-left: 0px;
+            }
+            &:last-child{
+                margin-left: 20px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+.power-meditation{
+    background-color: #F5EAED;
+    text-align: center;
+    padding-top: 30px;
+    .top-power{
+        position: relative;
+        margin-bottom: 100px;
+        &::after{
+            content: '';
+            background-image: url('../../img/sun-devide.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            background-size: contain;
+            width: 230px;
+            height: 120px;
+            left: 40.5%;
+            bottom: -57px;
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+        }
+    }
+}
+.conjunction{
+    padding-top: 200px;
+    h2{
+        position: relative;
+        margin-bottom: 0px;
+        &.title-head{
+            &::before{
+                content: '';
+                background-size: contain;
+                background-image: url('../../img/leaf-devide.png');
+                background-repeat: no-repeat;
+                width: 465px;
+                height: 200px;
+                position: absolute;
+                left: 30%;
+                top: -126px;
+                z-index: -1;
+            }
+        }
+    }
+    span{
+        display: block;
+        font-size: 55px;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 30px;
+        margin-top: 70px;
+        &-item{
+            flex: 1 0 0;
+            margin-left:20px;
+            margin-right: 20px;
+            h2{
+                letter-spacing: 5px;
+                font-size: 22px;
+                color: $pink;
+                text-transform: uppercase;
+            }
+            &:first-child{
+                margin-right: 20px;
+                margin-left: 0px;
+            }
+            &:last-child{
+                margin-left: 20px;
+                margin-right: 0px;
+            }
+        }
+    }
+    
+}
+.about-section{
+    padding-top: 0px;
+    padding-bottom: 70px;
+    .container{
+        width: 60%;
+        .divider{
+            margin-top: 50px;
+        }
+    }
+    .about-foto{
+        padding: 100px 0px;
+        position: relative;
+        .desc{
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            display: block;
+        }
+        &::before{
+            content: '';
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('../../img/leafs-down.png');
+            width: 420px;
+            height: 360px;
+            position: absolute;
+            right: -10px;
+            top: -47px;
+        }
+        &::after{
+            content: '';
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('../../img/leafs.png');
+            width: 420px;
+            height: 360px;
+            position: absolute;
+            left: -10px;
+            bottom: -47px;
+        }
+    }
+    &-next{
+        position: relative;
+        padding-top: 0px;
+        background-color: #ece3ed;
+        &::before{
+            content: '';
+            background-image: url('../../img/half-bg-section.png');
+            background-size: cover;
+            background-position: top center;
+            width: 100%;
+            height: 290px;
+            position: absolute;
+            top: -268px;
+            z-index: -1;
+        }
+        .column-2{
+            width: 75%;
+            margin: 0 auto 50px;
+        }
+        .container-75{
+            width: 75%;
+            margin: 50px auto 0px;
+        }
+    }
+}
+.cta{
+    background-color: #F5EAED;
+    text-align: center;
+    .link{
+        text-align: center;
+        &-visit{
+            color: $navy;
+            font-family: "Magnat-HeadRegular";
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: '';
+                background-image: url('../../img/strok-strong.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 300px;
+                height: 65px;
+                position: absolute;
+                z-index: -1;
+                left: -77px;
+                top: -12px;
+            }
+        }
+    }
+}
+.contact{
+    .container-75{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+.faq-1{
+    position: relative;
+    .container{
+        width: 50%;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url('../../img/half-bg-section.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 292px;
+        width: 100%;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+.content-faq{
+    h4{
+        font-family: 'Poppins',sans-serif;
+        font-style: normal;
+        letter-spacing: 3px;
+    }
+}
+.faq-2{
+    background-color: #ece3ed;
+    .container{
+        width: 50%;
+    }
+    .link{
+        text-align: left;
+        padding-left: 40px;
+        margin-top: 40px;
+        &-visit{
+            color: $navy;
+            font-family: "Magnat-HeadRegular";
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: '';
+                background-image: url('../../img/strok-strong.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 300px;
+                height: 65px;
+                position: absolute;
+                z-index: -1;
+                left: -77px;
+                top: -12px;
+            }
+        }
+    }
+}
+.faq{
+    .container{
+        width: 50%;
+    }
+    .content-faq{
+        margin-bottom: 50px;
+    }
+}
+.faq-3{
+    background-color: #F5EAED;
+    position: relative;
+    &::before{
+        content: "";
+        left: 2%;
+        top: 23%;
+        background-image: url('../../img/butterfly-red.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 300px;
+        height: 334px;
+        position: absolute;
+    }
+    .content-faq{
+        margin-bottom: 0px;
+    }
+}
+.faq-4{
+    position: relative;
+    &::before{
+        content: "";
+        right: 2%;
+        top: 23%;
+        background-image: url('../../img/butterfly-red.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 300px;
+        height: 334px;
+        position: absolute;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+}
+.faq-5,.faq-6{
+    background-color: #EEEAF4;
+    position: relative;
+    z-index: 2;
+}
+.faq-5{
+    &::before, &::after{
+        content: '';
+        background-image: url('../../img/waves.png');
+        background-repeat: no-repeat;
+        width: 668px;
+        height: 500px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        background-size: contain;
+        z-index: -1;
+    }
+    &::after{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        right: unset;
+        left: 0px;
+    }
+}
+.faq-6{
+    &::before, &::after{
+        content: '';
+        background-image: url('../../img/waves.png');
+        background-repeat: no-repeat;
+        width: 668px;
+        height: 500px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-size: contain;
+        z-index: -1;
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
+    &::after{
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        right: unset;
+        left: 0px;
+        -webkit-transform: scaleY(-1) scaleX(-1);
+        transform: scaleY(-1) scaleX(-1);
+    }
+}
+.faq-7{
+    background-image: url('../../img/bg-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .link{
+        text-align: left;
+        padding-left: 40px;
+        margin-top: 40px;
+        &-visit{
+            color: $navy;
+            font-family: "Magnat-HeadRegular";
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: '';
+                background-image: url('../../img/strok-strong.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 300px;
+                height: 65px;
+                position: absolute;
+                z-index: -1;
+                left: -77px;
+                top: -12px;
+            }
+        }
+    }
+}
+.faq-8{
+    background-color: #F5EAED;
+    position: relative;
+    &::after, &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../../img/half-butterfly.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 220px;
+        height: 400px;
+        right: 0px;
+        top: 17%;
+        z-index: 1;
+    }
+    &::before{
+        left: 0px;
+        right: unset;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+}
+.faq-9{
+    position: relative;
+    background-image: url('../../img/half-bg-section.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    .top-ornament{
+        position: relative;
+        &::before, &::after{
+            content: '';
+            background-image: url('../../img/leaf-many.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 0;
+            top: -110px;
+            height: 320px;
+            width: 380px;
+            background-size: contain;
+            background-position: 62px 0px;
+        }
+        &::before{
+            right: unset;
+            left: 0px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+}
+.faq-10{
+    position: relative;
+    background-color: transparent;
+    &::before{
+        content: '';
+        background-image: url('../../img/half-bg-section.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        top: 0px;
+        height: 288px;
+        width: 100%;
+        left: 0px;
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        z-index: -1;
+    }
+    &.testimonial{
+        .quote{
+            background-color: #F8F4F4;
+        }
+    }
+}
+.testi-page{
+    position: relative;
+    background-image: none;
+    &.top{
+        &::before,&::after{
+            content: '';
+            background-image: url('../../img/half-butterfly.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            bottom: 20%;
+            width: 200px;
+            height: 365px;
+            left: 0px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+        &::after{
+            right: 0px;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            left: unset;
+        }
+    }
+    &.faq-5{
+        .content-faq{
+            p{
+                &::after{
+                    content: '';
+                    background-image: url('../../img/leaf-single.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    bottom: 38%;
+                    width: 200px;
+                    height: 160px;
+                    right: 15%;
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+    &.faq-9{
+        &::before{
+            content: '';
+            background-image: url('../../img/half-bg-section.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            position: absolute;
+            top: 0px;
+            height: 345px;
+            width: 100%;
+            left: 0px;
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+            z-index: -1;
+        }
+        .top-ornament{
+            &::before{
+                top: 100px;
+            }
+            &::after{
+                top: 600px;
+            }
+        }
+        &::after{
+            content: '';
+            background-image: url('../../img/leaf-single.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            bottom: 5%;
+            width: 200px;
+            height: 160px;
+            left: 12%;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+}
+.center-butterfly{
+    background-color: #F5EAED;
+    background-image: url('../../img/butterfly-big.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     
