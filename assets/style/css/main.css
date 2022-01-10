@@ -180,6 +180,9 @@ section {
 .footer-section-widget-list .title {
   margin-bottom: 35px;
 }
+.footer-section-widget-list .item .img-widget {
+  width: 135px;
+}
 .footer-section-widget-list .item .link-footer {
   color: #F6F5F0;
   display: block;
@@ -627,8 +630,28 @@ section {
 .level.course-page::after {
   content: none;
 }
+.level.course-page .footnote {
+  margin-top: 60px;
+}
+.level.course-page .footnote p {
+  margin: 0px;
+  font-size: 16px;
+}
+.level.course-page .footnote p.italic {
+  font-style: italic;
+  line-height: 27px;
+}
 .level.course-page .level-content {
   padding-top: 0px;
+}
+.level.course-page .level-content-item-list {
+  width: 20%;
+}
+.level.course-page .level-content-item-list .top h2 {
+  font-size: 22px;
+}
+.level.course-page .level-content-item-list .dots::after {
+  left: 27px;
 }
 .level.course-page .text-pink {
   color: #E49FC6;
@@ -1920,6 +1943,11 @@ span.text-pink.ball {
 .course-page-lv .container {
   width: 60% !important;
 }
+.course-page-lv .container .uppercase span {
+  color: #3B3559;
+  text-transform: capitalize;
+  font-size: 33px;
+}
 .course-page-lv .content {
   display: flex;
   justify-content: space-between;
@@ -1951,6 +1979,8 @@ span.text-pink.ball {
 }
 .course-page-lv .content-item h2 span {
   color: #3B3559;
+  text-transform: capitalize;
+  font-size: 33px;
 }
 .course-page-lv .content-item .link {
   text-align: center;
@@ -2136,7 +2166,7 @@ span.text-pink.ball {
 }
 
 .about-section {
-  padding-top: 0px;
+  padding-top: 10px;
   padding-bottom: 70px;
 }
 .about-section .container {

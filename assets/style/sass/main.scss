@@ -134,6 +134,9 @@ section{
                 margin-bottom: 35px;
             }
             .item{
+                .img-widget{
+                    width: 135px;
+                }
                 .link-footer{
                     color: $light;
                     display: block;
@@ -593,8 +596,34 @@ section{
         &::after{
             content: none;
         }
+        .footnote{
+            margin-top: 60px;
+            p{
+                margin: 0px;
+                font-size: 16px;
+                &.italic{
+                    font-style: italic;
+                    line-height: 27px;
+                }
+            }
+        }
         .level-content{
             padding-top: 0px;
+            &-item{
+                &-list{
+                    width: 20%;
+                    .top{
+                        h2{
+                            font-size: 22px;
+                        }
+                    }
+                    .dots{
+                        &::after{
+                            left: 27px;
+                        }
+                    }
+                }
+            }
         }
         .text-pink{
             color: $pink;
@@ -1953,6 +1982,13 @@ span {
 .course-page-lv{
     .container{
         width: 60% !important;
+        .uppercase{
+            span{
+                color: $navy;
+                text-transform: capitalize;
+                font-size: 33px;
+            }
+        }
     }
     .content{
         display: flex;
@@ -1982,6 +2018,8 @@ span {
                 letter-spacing: 5px;
                 span{
                     color: $navy;
+                    text-transform: capitalize;
+                    font-size: 33px;
                 }
             }
             .link{
@@ -2171,7 +2209,7 @@ span {
     
 }
 .about-section{
-    padding-top: 0px;
+    padding-top: 10px;
     padding-bottom: 70px;
     .container{
         width: 60%;
