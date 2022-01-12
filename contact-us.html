@@ -39,9 +39,44 @@
             $("#headShot").load("head-shot.html");
         });
     </script>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <!-- Mobile Menu Responsive -->
+    <div class="topnav mobile" id="myTopnav">
+        <a href="index.html" class="item" >Home</a>
+        <a href="testimonial.html" class="item" >testimonials</a>
+        <a href="chi-activation.html" class="item">Why Chi Activation</a>
+        <a href="meditation.html" class="item" >Meditation</a>
+        <div class="dropdown">
+            <a class="item dropbtn">Courses <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-content">
+                <a href="courses.html">All Courses</a>
+                <a href="level1.html">level 1</a>
+                <a href="level2.html">level 2</a>
+                <a href="master-level.html">master level</a>
+                <a href="understanding.html">understanding chi activation</a>
+                <!-- <a href="chi-activation.html">chi activation</a> -->
+            </div>
+        </div>
+        <a href="about-us.html" class="item">About Us</a>
+        <a href="contact-us.html" class="item active">Contact</a>
+        <a href="blog.html" class="item">Blog</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+     <!--End  Mobile Menu Responsive -->
     <div class="top-content">
         <div class="menu">
             <div class="container-fluid">
@@ -112,7 +147,7 @@
             responsive:{
                 0:{
                     items:1,
-                    nav:true
+                    nav:false
                 },
                 600:{
                     items:2,
