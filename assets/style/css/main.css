@@ -232,6 +232,9 @@ section {
 .footer-section .footnote img {
   margin-right: 10px;
 }
+.footer-section form.contact {
+  margin-top: 0px;
+}
 
 .second {
   position: relative;
@@ -644,6 +647,9 @@ section {
 .level.course-page .level-content {
   padding-top: 0px;
 }
+.level.course-page .level-content-item {
+  justify-content: space-evenly;
+}
 .level.course-page .level-content-item-list {
   width: 20%;
 }
@@ -801,6 +807,9 @@ section {
   display: inline-block;
 }
 
+.second {
+  padding-bottom: 0px;
+}
 .second.understanding {
   position: relative;
 }
@@ -3030,15 +3039,807 @@ span.text-pink.ball {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    font-size: 28px !important;
+    letter-spacing: 5px;
+    line-height: 30px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+    letter-spacing: 5px;
+  }
+
+  h3 {
+    font-size: 18px !important;
+    letter-spacing: 5px;
+  }
+
+  h4 {
+    font-size: 14px !important;
+    letter-spacing: 5px;
+  }
+
+  .column-2 {
+    column-gap: 10px;
+    column-count: 1;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .paragraph p {
+    column-count: 1 !important;
+  }
+
   .container-fluid,
 .container {
-    width: 100%;
     margin: 0px auto;
-    padding: 0px 10px;
+    padding: 0px;
   }
 
   .container {
-    padding: 0px 20px;
+    padding: 0px 0px;
+    width: 90%;
+  }
+
+  .top-content {
+    height: 680px;
+  }
+
+  .head-hero span.head-title-page {
+    font-size: 54px;
+  }
+  .head-hero .logo-center {
+    margin-bottom: 20px;
+  }
+  .head-hero .logo-center img {
+    width: 30%;
+  }
+
+  .footer-section-widget-list {
+    width: 100%;
+  }
+  .footer-section-widget-list:last-child {
+    width: 100%;
+  }
+  .footer-section-widget-list .contact .input-action {
+    box-sizing: border-box;
+    height: 50px;
+  }
+  .footer-section-widget-list .contact .input-action-text {
+    box-sizing: border-box;
+  }
+  .footer-section .footnote {
+    display: block;
+  }
+  .footer-section .footnote img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 49px;
+  }
+  .footer-section .footnote span {
+    display: block;
+    text-align: center;
+  }
+
+  .second {
+    padding-top: 0px;
+    margin-top: -100px;
+  }
+  .second.video h2 {
+    letter-spacing: 2px;
+    font-size: 20px !important;
+  }
+  .second.self-healing {
+    margin-top: 0px;
+    padding-top: 100px;
+  }
+  .second.self-healing .container.special .column {
+    flex-wrap: wrap;
+  }
+  .second.self-healing .container.special .column .item {
+    box-sizing: border-box;
+    flex: 100% 0 0;
+  }
+  .second .top-ornament::before, .second .top-ornament::after {
+    top: -100px;
+    height: 150px;
+    width: 185px;
+    background-position: 36px 0px;
+  }
+  .second .container {
+    width: 90%;
+  }
+  .second h3 {
+    letter-spacing: 5px;
+  }
+  .second .more {
+    width: 63%;
+    margin: 100px auto 0px;
+  }
+  .second .more p {
+    width: 100%;
+  }
+  .second .more p::before {
+    width: 275px;
+    height: 120px;
+    left: -25%;
+    top: -39px;
+  }
+  .second .more .more-link {
+    width: 100%;
+  }
+  .second .more .more-link::before {
+    width: 190px;
+    height: 40px;
+    z-index: -1;
+    top: 0px;
+    left: 2%;
+  }
+  .second .paragraph.two::before {
+    height: 135px;
+    width: 100px;
+    right: 0px;
+  }
+  .second.understanding .top-ornament::before, .second.understanding .top-ornament::after {
+    height: 154px;
+    width: 130px;
+  }
+  .second.understanding .container {
+    width: 90%;
+  }
+
+  .third.understanding {
+    padding: 100px 0px 100px;
+  }
+  .third .column {
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+  .third .column-text {
+    width: 100%;
+  }
+  .third::before, .third::after {
+    width: 140px;
+    height: 106px;
+  }
+
+  .fourth .more p::before, .sixth .more p::before, .fifth .more p::before {
+    width: 190px;
+    height: 85px;
+    left: 0%;
+  }
+
+  .fourth.understanding .more::before {
+    left: -30%;
+  }
+  .fourth .more {
+    width: 63%;
+    margin: 100px auto 0px;
+  }
+  .fourth .more p {
+    width: 100%;
+  }
+  .fourth .more p::before {
+    width: 275px;
+    height: 120px;
+    left: -25%;
+    top: -39px;
+  }
+  .fourth .more .more-link {
+    width: 100%;
+  }
+  .fourth .more .more-link::before {
+    width: 190px;
+    height: 40px;
+    z-index: -1;
+    top: 0px;
+    left: 2%;
+  }
+
+  .fifth.understanding {
+    padding: 30px 0px 100px;
+  }
+  .fifth .more {
+    width: 63%;
+    margin: 100px auto 0px;
+  }
+  .fifth .more p {
+    width: 100%;
+  }
+  .fifth .more p::before {
+    width: 275px;
+    height: 120px;
+    left: -25%;
+    top: -39px;
+  }
+  .fifth .more .more-link {
+    width: 100%;
+  }
+  .fifth .more .more-link::before {
+    width: 190px;
+    height: 40px;
+    z-index: -1;
+    top: 0px;
+    left: 2%;
+  }
+
+  .sixth {
+    padding: 125px 0px 100px;
+  }
+  .sixth.understanding::before, .sixth.understanding::after {
+    height: 139px;
+    width: 200px;
+  }
+  .sixth h2::before {
+    width: 160px;
+    height: 85px;
+    left: 24%;
+    background-size: contain;
+    top: -90px;
+  }
+  .sixth .more {
+    width: 63%;
+    margin: 100px auto 0px;
+  }
+  .sixth .more p {
+    width: 100%;
+  }
+  .sixth .more p::before {
+    width: 275px;
+    height: 120px;
+    left: -25%;
+    top: -39px;
+  }
+  .sixth .more .more-link {
+    width: 100%;
+  }
+  .sixth .more .more-link::before {
+    width: 190px;
+    height: 40px;
+    z-index: -1;
+    top: 0px;
+    left: 2%;
+  }
+
+  .seventh.understanding h2::before {
+    height: 101px;
+    left: 16%;
+    top: -106px;
+    width: 70%;
+  }
+  .seventh.understanding::after {
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+  }
+
+  .level-text-top {
+    width: 100%;
+  }
+  .level h2 {
+    letter-spacing: 5px;
+  }
+  .level .level-content {
+    padding-top: 50px;
+  }
+  .level .level-content-item-list {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .level .level-content-item-list:last-child {
+    margin-bottom: 0px;
+  }
+  .level .level-content-item-list .dots::after {
+    height: 140px;
+    width: 140px;
+    bottom: -50px;
+    left: 28%;
+  }
+  .level.course-page {
+    margin-top: -150px;
+  }
+  .level.course-page .level-content-item-list {
+    flex: 100% 0 0;
+    box-sizing: border-box;
+  }
+  .level.course-page .level-content-item-list .dots::after {
+    left: 81px;
+  }
+
+  .activation {
+    padding-bottom: 76px;
+  }
+  .activation .activation-top {
+    margin-bottom: 50px;
+  }
+  .activation .activation-top-list {
+    flex-wrap: wrap;
+  }
+  .activation .activation-top-list .item {
+    flex: 100% 0 0;
+    margin-bottom: 20px;
+  }
+  .activation .title-head {
+    margin-top: 125px;
+  }
+  .activation .title-head::after {
+    width: 160px;
+    height: 85px;
+    left: 24%;
+    background-size: contain;
+    top: -90px;
+  }
+  .activation .paragraph .column {
+    flex-wrap: wrap;
+  }
+  .activation .paragraph .column-half:first-child {
+    margin-bottom: 20px;
+  }
+  .activation::after {
+    background-size: cover;
+    height: 113px;
+  }
+
+  .dot-ornament::before {
+    width: 100px;
+    height: 100px;
+    top: -56px;
+    left: 36%;
+  }
+
+  .find-chi::before, .find-chi::after {
+    top: -83px;
+    height: 134px;
+    width: 200px;
+  }
+
+  .testimonial h2 span {
+    font-size: 48px;
+  }
+  .testimonial .quote-author::after {
+    left: -6%;
+  }
+
+  .about-section {
+    margin-top: -150px;
+  }
+  .about-section .container {
+    width: 90%;
+  }
+  .about-section .about-foto {
+    padding: 100px 0px 50px;
+  }
+  .about-section .about-foto img {
+    width: 100%;
+  }
+  .about-section .about-foto::before {
+    width: 200px;
+    height: 165px;
+    position: absolute;
+    top: 32px;
+    left: -46px;
+    right: unset;
+  }
+  .about-section .about-foto::after {
+    width: 200px;
+    height: 165px;
+    position: absolute;
+    left: unset;
+    right: -46px;
+    bottom: 50px;
+  }
+  .about-section-next .column-2 {
+    width: 90%;
+    margin: 0 auto 50px;
+    column-count: 1;
+  }
+  .about-section-next .container-75 {
+    width: 90%;
+  }
+
+  .contact {
+    padding-top: 0px;
+    margin-top: -150px;
+  }
+  .contact .container-75 {
+    width: 90%;
+  }
+  .contact .butterfly-leafs img {
+    width: 100%;
+  }
+
+  .faq-1, .faq-2 {
+    margin-top: -150px;
+    padding-top: 0px;
+  }
+  .faq-1 .container, .faq-2 .container {
+    width: 90%;
+  }
+  .faq-1 .content-faq h4, .faq-2 .content-faq h4 {
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: initial;
+    font-size: 20px !important;
+  }
+
+  .faq-2 {
+    margin-top: 0px;
+  }
+  .faq-2 .link {
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 40px;
+  }
+
+  .faq .container {
+    width: 90%;
+  }
+  .faq .content-faq {
+    z-index: 2;
+    position: relative;
+  }
+  .faq .content-faq h4 {
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: initial;
+    font-size: 20px !important;
+  }
+
+  .faq-3::before, .faq-4::before {
+    filter: opacity(0.5);
+  }
+
+  .faq-5::before, .faq-5::after, .faq-6::before, .faq-6::after {
+    width: 150px;
+    height: 112px;
+  }
+
+  .faq-8::after, .faq-8::before {
+    width: 95px;
+    height: 175px;
+  }
+
+  .faq-9 .top-ornament::before, .faq-9 .top-ornament::after {
+    height: 150px;
+    width: 212px;
+  }
+
+  .meditation-one {
+    margin-top: -150px;
+    padding-top: 0px;
+  }
+  .meditation-one .content {
+    flex-wrap: wrap;
+  }
+  .meditation-one .content-item {
+    flex: 100% 0 0;
+    text-align: center;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .meditation-one .content-item:first-child {
+    margin-right: 0px;
+  }
+  .meditation-one .content-item:last-child {
+    margin-left: 0px;
+  }
+
+  .second.meditation-one {
+    padding-top: 100px;
+  }
+  .second.meditation-one .top-ornament::before, .second.meditation-one .top-ornament::after {
+    top: 7px;
+  }
+
+  .power-meditation .top-power::after {
+    left: 15.5%;
+  }
+
+  .conjunction h2.title-head::before {
+    width: 355px;
+    height: 155px;
+    position: absolute;
+    left: -3%;
+  }
+  .conjunction .content {
+    flex-wrap: wrap;
+  }
+  .conjunction .content-item {
+    flex: 100% 0 0;
+    text-align: center;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .conjunction .content-item:first-child {
+    margin-right: 0px;
+  }
+  .conjunction .content-item:last-child {
+    margin-left: 0px;
+  }
+
+  .course-page-lv .container {
+    width: 90% !important;
+  }
+  .course-page-lv .content {
+    flex-wrap: wrap;
+  }
+  .course-page-lv .content-item {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  .course-page-lv .content-item:first-child {
+    margin-right: 0px;
+  }
+  .course-page-lv .content-item:last-child {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .course-heal .paragraph {
+    width: 90%;
+  }
+  .course-heal .content {
+    flex-wrap: wrap;
+  }
+  .course-heal .content-item {
+    flex: 100% 0 0;
+    text-align: center;
+    margin: 0px 0px 20px;
+    box-sizing: border-box;
+  }
+  .course-heal .content-item:first-child {
+    margin-right: 0px;
+  }
+  .course-heal .content-item:last-child {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .course-heal .content-item .link-visit::after {
+    left: 0;
+  }
+
+  .healing {
+    padding-bottom: 220px;
+  }
+  .healing::after {
+    height: 318px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-position: 0px 0px;
+  }
+
+  .testi-page {
+    padding-top: 0px;
+    margin-top: -150px;
+  }
+  .testi-page.blog-page {
+    padding-top: 100px;
+    margin-top: 0px;
+  }
+  .testi-page.top::before, .testi-page.top::after {
+    width: 116px;
+    height: 212px;
+    z-index: -1;
+    filter: opacity(0.5);
+  }
+  .testi-page.faq-5 .content-faq p::after {
+    z-index: -1;
+  }
+  .testi-page.faq-9 .top-ornament::before {
+    top: 260px;
+    z-index: -1;
+  }
+  .testi-page.faq-9 .top-ornament::after {
+    top: 900px;
+    z-index: -1;
+  }
+
+  .level-up {
+    padding-top: 0px;
+    margin-top: -150px;
+  }
+  .level-up .container {
+    width: 90%;
+  }
+  .level-up .ornament img.image-dots {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .level-1 .paragraph p.text-content::after {
+    left: 22%;
+  }
+
+  .chakra .column {
+    flex-wrap: wrap;
+  }
+  .chakra .column .item {
+    flex: 100% 0 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .chakra .column .item:last-child {
+    margin-bottom: 0px;
+  }
+
+  .chakras .paragraph {
+    width: 90%;
+  }
+  .chakras h2.main-title::before {
+    left: 25%;
+  }
+  .chakras::before, .chakras::after {
+    height: 153px !important;
+    width: 205px !important;
+    top: 700px !important;
+  }
+
+  .intuitive .paragraph {
+    width: 90%;
+  }
+  .intuitive .paragraph::after {
+    left: 22%;
+  }
+
+  .course .level-content-item-list {
+    box-sizing: border-box;
+    flex: 100% 0 0;
+    margin-bottom: 62px;
+  }
+  .course .level-content-item-list:last-child {
+    margin-bottom: 0px;
+  }
+  .course .level-content-item-list .dots::after {
+    left: 55px;
+  }
+
+  .abilities::before, .abilities::after {
+    width: 143px;
+    height: 260px;
+  }
+  .abilities .container {
+    width: 90%;
+  }
+
+  .meditation .container {
+    width: 90%;
+  }
+  .meditation .paragraph h2::after {
+    left: -29px;
+  }
+  .meditation-advance .content {
+    flex-wrap: wrap;
+  }
+  .meditation-advance .content-item {
+    box-sizing: border-box;
+    flex: 100% 0 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .meditation-advance .content-item:first-child {
+    margin-right: 0px;
+  }
+  .meditation-advance .content-item:last-child {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .meditation-art-inner .content {
+    flex-wrap: wrap;
+  }
+  .meditation-art-inner .content-item {
+    box-sizing: border-box;
+    flex: 100% 0 0;
+    margin: 0px 0px 20px;
+    text-align: center;
+  }
+  .meditation-art-inner .content-item:first-child {
+    margin-right: 0px;
+  }
+  .meditation-art-inner .content-item:last-child {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .the-course h2.title::before {
+    left: 20%;
+  }
+  .the-course .content {
+    flex-wrap: wrap;
+  }
+  .the-course .content-item {
+    box-sizing: border-box;
+    flex: 100% 0 0;
+    margin: 0px 0px 20px;
+    text-align: center;
+  }
+  .the-course .content-item:first-child {
+    margin-right: 0px;
+  }
+  .the-course .content-item:last-child {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .blog.top {
+    padding-top: 0px;
+    margin-top: -150px;
+  }
+  .blog.top .top-ornament::before, .blog.top .top-ornament::after {
+    top: -85px;
+    height: 166px;
+    width: 226px;
+    background-position: 59px 0px;
+    z-index: -1;
+  }
+  .blog.top .searchbar .search-content span {
+    flex: 100% 0 0;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  .blog-page .block {
+    flex-wrap: wrap;
+  }
+  .blog-page .block .item {
+    box-sizing: border-box;
+    margin-bottom: 60px;
+  }
+  .blog-page .block .item .link {
+    left: 27%;
+  }
+  .blog-page .block .item:last-child {
+    margin-bottom: 0px;
+  }
+
+  .article.top-article {
+    padding-top: 0px;
+    margin-top: -150px;
+  }
+  .article.second-article .top-ornament::before, .article.second-article .top-ornament::after {
+    top: -218px;
+    height: 200px;
+    width: 197px;
+  }
+  .article.petals .bottom-ornament::after {
+    left: 5px;
+  }
+  .article.emotions::after {
+    content: none;
+  }
+
+  .expectation .container {
+    width: 90%;
+  }
+  .expectation .middle-ornamnet::before {
+    content: none;
+  }
+
+  .change-chi::before, .change-chi::after {
+    z-index: -1;
+  }
+  .change-chi .top-ornament::before, .change-chi .top-ornament::after {
+    height: 150px;
+    width: 200px;
+  }
+  .change-chi .container {
+    width: 90%;
+  }
+
+  .cta.article .content {
+    flex-wrap: wrap;
+  }
+  .cta.article .content-item {
+    flex: 100% 0 0;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  .cta.article .content-item:last-child {
+    margin-bottom: 0px;
   }
 }
 
