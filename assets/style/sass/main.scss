@@ -4099,47 +4099,47 @@ span {
     overflow: hidden;
     background-color: transparent;
     z-index: 99;
-}
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border-bottom: 1px solid #FDFDFD;
-}
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}  
-.topnav .icon {
-    display: none;
+    a, span {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        border-bottom: 1px solid #FDFDFD;
+        &:hover {
+            background-color: #ddd;
+            color: black;
+        }  
+    }
+    .icon {
+        display: none;
+    }
 }
   
 @media screen and (max-width: 600px) {
-    .topnav a {
+    .topnav a, .topnav span {
         display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: inline-block;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        background: #3B3559;
-        color: #E3CADD;
-        font-size: 26px;
-        margin: 10px;
-        box-sizing: border-box;
-        line-height: 50px;
-        text-align: center;
-        padding: 0px;
-    }
-    .topnav a.active {
-        background-color: transparent;
-        color: #F29CAB;
+        &.icon {
+            float: right;
+            display: inline-block;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background: #3B3559;
+            color: #E3CADD;
+            font-size: 26px;
+            margin: 10px;
+            box-sizing: border-box;
+            line-height: 50px;
+            text-align: center;
+            padding: 0px;
+        }
+        &.active {
+            background-color: transparent;
+            color: #F29CAB;
+        }
     }
 }
   
@@ -4149,6 +4149,7 @@ span {
         right: 0px;
         .dropdown{
             position: relative;
+            display: block;
             &-content{
                 position: inherit;
                 background-color: #7b73a7;
@@ -4172,29 +4173,31 @@ span {
         }
     }
     .topnav.responsive {
-        position: relative;
+        position: absolute;
         padding-top: 53px;
         background-color: #3B3559;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
+        width: 250px;
         right: 0px;
-        top: 0;
-        text-align: center;
-        display: inline-block;
-        line-height: 50px;
-        box-shadow: none;
-        border: none;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      text-transform: capitalize;
-    }
-    .topnav{
-        .dropdown{
+        a, span{
+            float: none;
             display: block;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        .icon {
+            position: absolute;
+            right: 0px;
+            top: 0;
+            text-align: center;
+            display: inline-block;
+            line-height: 50px;
+            box-shadow: none;
+            border: none;
+        }
+        span{
+            padding: 10px 0px;
+            text-align: center;
+            line-height: 1px;        
         }
     }
 }
