@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap");
 html,
@@ -6,6 +7,10 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+}
+
+div {
+  position: relative;
 }
 
 p, small, a, form, input, textarea, option, .copyright {
@@ -3052,6 +3057,14 @@ span.text-pink.ball {
   font-size: 18px;
 }
 
+.footer-mobile {
+  display: none;
+}
+
+.footer-desktop {
+  display: flex;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .mobile {
     display: block;
@@ -3117,8 +3130,18 @@ span.text-pink.ball {
     width: 30%;
   }
 
+  .footer-section {
+    padding: 10px 0px 0px;
+  }
+  .footer-section .footer-mobile {
+    display: block;
+  }
+  .footer-section .footer-desktop {
+    display: none;
+  }
   .footer-section-widget-list {
     width: 100%;
+    padding-top: 20px;
   }
   .footer-section-widget-list:last-child {
     width: 100%;
@@ -3132,6 +3155,8 @@ span.text-pink.ball {
   }
   .footer-section .footnote {
     display: block;
+    border-top: none;
+    padding-top: 0px;
   }
   .footer-section .footnote img {
     display: block;
@@ -3963,6 +3988,49 @@ span.text-pink.ball {
     padding: 10px 0px;
     text-align: center;
     line-height: 1px;
+  }
+
+  /* Footer Accordion*/
+  .accordion {
+    background-color: #3B3559;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    font-family: "Poppins", sans-serif;
+    border-bottom: 1px solid #ffffff;
+  }
+  .accordion:hover, .accordion.active {
+    background-color: #3B3559;
+  }
+  .accordion.active:after {
+    content: "‹";
+    transform: rotate(90deg);
+  }
+  .accordion:after {
+    content: "›";
+    margin-left: 5px;
+    color: #ffffff;
+    font-weight: normal;
+    float: right;
+    margin-left: 5px;
+    font-size: 30px;
+    line-height: 20px;
+    transform: rotate(90deg);
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: #3B3559;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ffffff;
+    transition: max-height 0.2s ease-out;
   }
 }
 

@@ -1,6 +1,47 @@
 <footer class="footer-section">
+    <div class="footer-mobile">
+        <button class="accordion">QUICK LINKS</button>
+        <div class="panel">
+            <div class="footer-section-widget-list">
+                <div class="item">
+                    <a href="testimonial.html" class="link-footer">Testimonials</a>
+                    <a href="meditation.html" class="link-footer">Meditation</a>
+                    <a href="contact-us.html" class="link-footer">Contact</a>
+                    <a href="about-us.html" class="link-footer">About Us</a>
+                    <a href="blog.html" class="link-footer">Blog</a>
+                    <a href="faq.html" class="link-footer">FAQ</a>
+                </div>  
+            </div>  
+        </div>
+
+        <button class="accordion">COURSES</button>
+        <div class="panel">
+            <div class="footer-section-widget-list">
+                <div class="item">
+                    <a href="understanding-chi-activation.html" class="link-footer">Why Chi Activation?</a>
+                    <a href="courses.html" class="link-footer">Cources</a>
+                    <a href="level1.html" class="link-footer">Level 1</a>
+                    <a href="level2.html" class="link-footer">Level 2</a>
+                    <a href="master-level.html" class="link-footer">Master Course</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">CONTACT US</button>
+        <div class="panel">
+            <div class="footer-section-widget-list">
+                <form class="contact">
+                    <input class="input-action" placeholder="Name..."/>
+                    <input class="input-action" placeholder="E-Mail..."/>
+                    <input class="input-action" placeholder="Topic..."/>
+                    <textarea class="input-action-text" placeholder="Message..."></textarea>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="footer-section-widget">
+        <div class="footer-section-widget footer-desktop">
             <div class="footer-section-widget-list">
                 <div class="title">QUICK LINKS</div>
                 <div class="item">
@@ -44,3 +85,19 @@
         </div>
     </div>
 </footer>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
