@@ -8,6 +8,9 @@ p, small, a, form, input, textarea, option, .copyright{
     text-decoration: none;
     font-weight: normal;
 }
+p{
+    line-height: 42px !important;
+}
 h1, h2, h3, h4, h5, h6{
     margin-top: 0px;
     font-family: "Magnat-HeadRegular";
@@ -15,6 +18,13 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
     font-style: italic;
     color: $navy;
+}
+h2{
+    margin-bottom: 60px !important;
+    line-height: 50px;
+    &.text-pink{
+        margin-bottom: 18px !important;
+    }
 }
 span{
     font-family: 'Dancing Script', cursive;

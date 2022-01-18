@@ -21,6 +21,10 @@ p, small, a, form, input, textarea, option, .copyright {
   font-weight: normal;
 }
 
+p {
+  line-height: 42px !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   font-family: "Magnat-HeadRegular";
@@ -28,6 +32,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: italic;
   color: #3B3559;
+}
+
+h2 {
+  margin-bottom: 60px !important;
+  line-height: 50px;
+}
+h2.text-pink {
+  margin-bottom: 18px !important;
 }
 
 span {
@@ -392,6 +404,7 @@ section {
   text-transform: uppercase;
   color: #E49FC6;
   font-size: 26px;
+  letter-spacing: 6px;
 }
 .third p {
   position: relative;
@@ -2578,10 +2591,10 @@ span.text-pink.ball {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  bottom: 38%;
+  bottom: -43px;
   width: 200px;
   height: 160px;
-  right: 15%;
+  right: 28%;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -3044,17 +3057,26 @@ span.text-pink.ball {
   color: #E49FC6 !important;
 }
 
+.dropdown-content a:hover::after,
+.dropdown-content a.active::after {
+  content: none !important;
+}
+
+.dropdown-content a.active {
+  color: #E49FC6 !important;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3B3559;
+  /* background-color: #3B3559; */
+  /* color: #F6F5F0 !important; */
   border-radius: 5px;
-  color: #F6F5F0 !important;
-  font-weight: normal;
+  font-weight: 600;
   padding: 5px 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .footer-mobile {
