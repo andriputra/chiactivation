@@ -203,10 +203,7 @@ section {
   flex-wrap: wrap;
 }
 .footer-section-widget-list {
-  width: 30%;
-}
-.footer-section-widget-list:last-child {
-  width: 40%;
+  width: 33.3%;
 }
 .footer-section-widget-list .title {
   margin-bottom: 35px;
@@ -221,9 +218,6 @@ section {
 }
 .footer-section-widget-list .item .link-footer:hover {
   color: #F29CAB;
-}
-.footer-section-widget-list .item.address {
-  margin-top: 50px;
 }
 .footer-section-widget-list .item.address .link-footer {
   color: #F29CAB;

@@ -140,9 +140,9 @@ section{
         flex-direction: row;
         flex-wrap: wrap;
         &-list{
-            width: 30%;
+            width: 33.3%;
             &:last-child{
-                width: 40%;
+                // width: 40%;
             }
             .title{
                 margin-bottom: 35px;
@@ -160,7 +160,7 @@ section{
                     }
                 }
                 &.address{
-                    margin-top: 50px;
+                    // margin-top: 50px;
                     .link-footer{
                         color: $peach;
                         &:hover{
