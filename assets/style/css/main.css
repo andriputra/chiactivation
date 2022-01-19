@@ -40,6 +40,9 @@ h2 {
 }
 h2.text-pink {
   margin-bottom: 18px !important;
+  color: #E49FC6;
+  letter-spacing: 5px;
+  font-size: 22px;
 }
 
 span {
@@ -124,6 +127,10 @@ body {
 
 section {
   padding: 100px 0px;
+}
+
+.mt-70 {
+  margin-top: 70px;
 }
 
 .menu {
@@ -1201,6 +1208,11 @@ section {
 .activation .paragraph .column-half p {
   margin: 0px;
   color: #E49FC6;
+  font-family: "Magnat-HeadRegular", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 .activation .text-special {
   display: block;
@@ -1713,6 +1725,76 @@ section {
   margin: 20px auto 0px;
   background-position: center;
   font-style: italic;
+}
+.abilities.bg-peach {
+  background-color: #F5EAED;
+  z-index: -1;
+}
+.abilities.bg-peach .level {
+  padding: 0px;
+}
+.abilities.bg-peach .level::after {
+  content: none;
+}
+.abilities.bg-peach .level .level-content {
+  padding-top: 0px;
+}
+.abilities.bg-peach .level .level-content-item {
+  justify-content: center;
+}
+.abilities.bg-peach .level .level-content-item-list {
+  width: 37%;
+}
+.abilities.bg-peach .level .level-content-item-list .top {
+  padding-top: 20px;
+}
+.abilities.bg-peach .level .level-content-item-list span {
+  font-size: 38px;
+}
+.abilities.bg-peach .level .level-content-item-list h2 {
+  margin-top: 0px;
+}
+.abilities.bg-peach .paragraph p {
+  column-count: 1;
+}
+
+.payment .box-instans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.payment .box-instans-item {
+  border: 1px solid #171717;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 0 0;
+  margin: 0px 10px;
+}
+.payment .box-instans-item p {
+  margin: 0px 0px 5px;
+}
+.payment .box-instans-item .link {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+.payment .box-instans-item .link .link-btn {
+  color: #171717;
+  position: relative;
+  z-index: 1;
+}
+.payment .box-instans-item .link .link-btn::after {
+  content: "";
+  background-size: contain;
+  background-image: url("../../img/strok-strong.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 300px;
+  height: 65px;
+  position: absolute;
+  left: -98px;
+  top: -12px;
+  z-index: -1;
 }
 
 .master-level {
@@ -2625,6 +2707,7 @@ span.text-pink.ball {
   left: 12%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  z-index: -1;
 }
 
 .center-butterfly {
@@ -3081,6 +3164,220 @@ span.text-pink.ball {
   display: flex;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .top-content {
+    padding-top: 100px;
+    height: 550px;
+    background-position: center;
+  }
+
+  .head-hero h1 {
+    font-size: 38px;
+    line-height: 63px;
+  }
+  .head-hero span.head-title-page {
+    font-size: 62px;
+  }
+
+  .third::before, .third::after {
+    width: 390px;
+    height: 294px;
+  }
+
+  .second.level-2 {
+    padding-top: 0px;
+  }
+  .second.level-2 .container {
+    width: 70%;
+  }
+  .second.understanding {
+    padding-top: 0px;
+  }
+  .second.understanding .top-ornament::before, .second.understanding .top-ornament::after {
+    width: 332px;
+  }
+  .second.meditation-one .container {
+    width: 70%;
+  }
+  .second .top-ornament::before {
+    width: 263px;
+  }
+
+  .second .more p, .fourth .more p, .fifth .more p, .sixth .more p {
+    width: 100%;
+    line-height: 28px !important;
+  }
+  .second .more p::before, .fourth .more p::before, .fifth .more p::before, .sixth .more p::before {
+    left: -12%;
+  }
+  .second .more .more-link, .fourth .more .more-link, .fifth .more .more-link, .sixth .more .more-link {
+    width: 100%;
+  }
+  .second .more .more-link::before, .fourth .more .more-link::before, .fifth .more .more-link::before, .sixth .more .more-link::before {
+    background-size: cover;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: -13px;
+  }
+
+  .fourth.understanding .more::before {
+    left: 8%;
+  }
+
+  .sixth h2::before {
+    left: 27%;
+  }
+
+  .level-level-top {
+    width: 100%;
+  }
+  .level .level-content-item-list {
+    width: 26%;
+  }
+  .level .level-content-item-list .dots::after {
+    left: -17px;
+  }
+
+  .faq-5::before, .faq-5::after {
+    width: 380px;
+    height: 288px;
+  }
+
+  .faq-6::before, .faq-6::after {
+    width: 380px;
+    height: 288px;
+    top: -6px;
+  }
+
+  .testi-page.faq-5 .content-faq p::after {
+    bottom: -60px;
+    right: 7%;
+    z-index: -1;
+  }
+
+  .course-heal .content-item .link-visit::after {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+  }
+
+  .healing::after {
+    height: 380px;
+    background-position: 0px 0px;
+  }
+
+  .activation::after {
+    background-repeat: no-repeat;
+    height: 390px;
+    background-size: cover;
+  }
+
+  .dot-ornament::before {
+    left: 38%;
+  }
+
+  .power-meditation .top-power::after {
+    left: 31.5%;
+  }
+
+  .conjunction h2.title-head::before {
+    left: 16%;
+  }
+
+  .level-up {
+    padding-top: 0px;
+  }
+  .level-up .container {
+    width: 80%;
+  }
+
+  .level-1 .container {
+    width: 80%;
+  }
+  .level-1 .paragraph p.text-content::after {
+    left: 36%;
+  }
+
+  .intuitive .paragraph {
+    width: 100%;
+  }
+  .intuitive .paragraph::after {
+    left: 36%;
+  }
+
+  .course .level-content-item-list {
+    width: 37%;
+  }
+  .course .level-content-item-list .dots::after {
+    left: 11%;
+  }
+
+  .self-healing .container.special .column {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .self-healing .container.special .column .item {
+    flex: 1 0 0;
+    margin: 0px 5px;
+  }
+
+  .meditation .paragraph h2::after {
+    left: 14%;
+  }
+
+  .the-course h2.title::before {
+    left: 35%;
+  }
+  .the-course .content {
+    justify-content: center;
+  }
+
+  .about-section .container {
+    width: 80%;
+  }
+  .about-section-next .column-2 {
+    width: 100%;
+  }
+  .about-section-next .container-75 {
+    width: 100%;
+  }
+
+  .contact {
+    padding-top: 0px;
+  }
+  .contact .butterfly-leafs img {
+    width: 100%;
+  }
+
+  .blog-page .block .item .link {
+    left: 24%;
+  }
+  .blog-page .link {
+    padding-left: 0px;
+  }
+
+  .benefits .content {
+    justify-content: center;
+  }
+
+  .blog.top {
+    padding-top: 0px;
+  }
+
+  .article.top-article {
+    padding-top: 0px;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .mobile {
     display: block;
@@ -3925,7 +4222,7 @@ span.text-pink.ball {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .topnav a, .topnav span {
     display: none;
   }
@@ -3948,8 +4245,7 @@ span.text-pink.ball {
     background-color: transparent;
     color: #F29CAB;
   }
-}
-@media screen and (max-width: 600px) {
+
   .topnav {
     position: absolute;
     right: 0px;
