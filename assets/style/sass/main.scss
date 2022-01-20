@@ -584,6 +584,19 @@ section{
             }
         }
     }
+    &.activation{
+        &.level-2{
+            background-color: #EEEAF4;
+            .paragraph{
+                h2{
+                    font-size: 22px;
+                }
+                p{
+                    column-count: 1;
+                }
+            }
+        }
+    }
 }
 .level{
     position: relative;

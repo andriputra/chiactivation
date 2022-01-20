@@ -630,6 +630,15 @@ section {
   z-index: -1;
   top: -8px;
 }
+.sixth.activation.level-2 {
+  background-color: #EEEAF4;
+}
+.sixth.activation.level-2 .paragraph h2 {
+  font-size: 22px;
+}
+.sixth.activation.level-2 .paragraph p {
+  column-count: 1;
+}
 
 .level {
   position: relative;
