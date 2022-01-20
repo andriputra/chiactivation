@@ -1274,6 +1274,47 @@ section{
         }
     }
 }
+.methode{
+    background: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    &::after{
+        content: none;
+    }
+    .title-head{
+        &::after{
+            content: none;
+        }
+    }
+    .link{
+        position: relative;
+        display: inline-block;
+        margin-top: 30px;
+        .link-btn{
+            color: $blackDark;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: '';
+                background-size: contain;
+                background-image: url('../../img/strok-strong.png');
+                background-repeat: no-repeat;
+                display: block;
+                width: 300px;
+                height: 65px;
+                position: absolute;
+                left: -98px;
+                top: -12px;
+                z-index: -1;
+            }
+        }
+    }
+}
+.level1-add{
+    padding-top: 200px;
+    background-position: center -500px;
+    background-size: auto;
+}
 .program{
     background: transparent;
 }
@@ -1787,7 +1828,7 @@ section{
         }
     }
 }
-.payment{
+.payment, .payment-order{
     .box-instans{
         display: flex;
         flex-wrap: wrap;

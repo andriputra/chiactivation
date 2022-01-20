@@ -1270,6 +1270,47 @@ section {
   z-index: -1;
 }
 
+.methode {
+  background: transparent;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.methode::after {
+  content: none;
+}
+.methode .title-head::after {
+  content: none;
+}
+.methode .link {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+.methode .link .link-btn {
+  color: #171717;
+  position: relative;
+  z-index: 1;
+}
+.methode .link .link-btn::after {
+  content: "";
+  background-size: contain;
+  background-image: url("../../img/strok-strong.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 300px;
+  height: 65px;
+  position: absolute;
+  left: -98px;
+  top: -12px;
+  z-index: -1;
+}
+
+.level1-add {
+  padding-top: 200px;
+  background-position: center -500px;
+  background-size: auto;
+}
+
 .program {
   background: transparent;
 }
@@ -1767,32 +1808,32 @@ section {
   column-count: 1;
 }
 
-.payment .box-instans {
+.payment .box-instans, .payment-order .box-instans {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.payment .box-instans-item {
+.payment .box-instans-item, .payment-order .box-instans-item {
   border: 1px solid #171717;
   padding: 20px;
   border-radius: 10px;
   flex: 1 0 0;
   margin: 0px 10px;
 }
-.payment .box-instans-item p {
+.payment .box-instans-item p, .payment-order .box-instans-item p {
   margin: 0px 0px 5px;
 }
-.payment .box-instans-item .link {
+.payment .box-instans-item .link, .payment-order .box-instans-item .link {
   position: relative;
   display: inline-block;
   margin-top: 30px;
 }
-.payment .box-instans-item .link .link-btn {
+.payment .box-instans-item .link .link-btn, .payment-order .box-instans-item .link .link-btn {
   color: #171717;
   position: relative;
   z-index: 1;
 }
-.payment .box-instans-item .link .link-btn::after {
+.payment .box-instans-item .link .link-btn::after, .payment-order .box-instans-item .link .link-btn::after {
   content: "";
   background-size: contain;
   background-image: url("../../img/strok-strong.png");
