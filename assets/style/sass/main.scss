@@ -3260,6 +3260,9 @@ span {
                     width: 332px;
                 }
             }
+            &.self-healing{
+                padding-top: 100px;
+            }
         }
         &.meditation-one{
             .container{
@@ -3529,6 +3532,52 @@ span {
     .article{
         &.top-article{
             padding-top: 0px;
+        }
+    }
+    .activation{
+        .title{
+            &-head{
+                &::after{
+                    left: 29%;
+                }
+            }
+        }
+    }
+    .abilities{
+        &.bg-peach{
+            .level{
+                .level-content{
+                    &-item{
+                        &-list{
+                            width: 100%;
+                            .dots{
+                                &::after{
+                                    left: 28%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .payment{
+        .box-instans{
+            &-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                .link{
+                    .link-btn{
+                        &::after{
+                            width: 220px;
+                            left: -63px;
+                            top: -8px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -4522,6 +4571,30 @@ span {
                     &:last-child{
                         margin-bottom: 0px;
                     }
+                }
+            }
+        }
+    }
+    .abilities{
+        &.bg-peach{
+            .level{
+                .level-content{
+                    &-item{
+                        &-list{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .payment{
+        .box-instans{
+            &-item{
+                flex: 100%;
+                margin-bottom: 20px;
+                &:last-child{
+                    margin-bottom: 0px;
                 }
             }
         }

@@ -3213,6 +3213,9 @@ span.text-pink.ball {
   .second.understanding .top-ornament::before, .second.understanding .top-ornament::after {
     width: 332px;
   }
+  .second.understanding.self-healing {
+    padding-top: 100px;
+  }
   .second.meditation-one .container {
     width: 70%;
   }
@@ -3385,6 +3388,29 @@ span.text-pink.ball {
 
   .article.top-article {
     padding-top: 0px;
+  }
+
+  .activation .title-head::after {
+    left: 29%;
+  }
+
+  .abilities.bg-peach .level .level-content-item-list {
+    width: 100%;
+  }
+  .abilities.bg-peach .level .level-content-item-list .dots::after {
+    left: 28%;
+  }
+
+  .payment .box-instans-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .payment .box-instans-item .link .link-btn::after {
+    width: 220px;
+    left: -63px;
+    top: -8px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -4205,6 +4231,18 @@ span.text-pink.ball {
     margin-bottom: 30px;
   }
   .cta.article .content-item:last-child {
+    margin-bottom: 0px;
+  }
+
+  .abilities.bg-peach .level .level-content-item-list {
+    width: 100%;
+  }
+
+  .payment .box-instans-item {
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+  .payment .box-instans-item:last-child {
     margin-bottom: 0px;
   }
 }
