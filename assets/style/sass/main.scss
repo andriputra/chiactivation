@@ -223,6 +223,20 @@ section{
             font-weight: 900;
         }
     }
+    &.lv-1{
+        .container{
+            width: 80%;
+            .paragraph{
+                p{
+                    &.text-content{
+                        &::after{
+                            left: 43%;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .container{
         width: 50%;
     }
@@ -570,7 +584,7 @@ section{
             text-align: center;
             color: $blackDark;
             position: relative;
-            &::before{
+            &::after{
                 content: '';
                 background-image: url('../../img/strok-strong.png');
                 background-repeat: no-repeat;
@@ -581,6 +595,9 @@ section{
                 left: 0px;
                 z-index: -1;
                 top: -8px;
+            }
+            &:hover{
+                cursor: pointer;
             }
         }
     }
@@ -1342,6 +1359,11 @@ section{
         color: $navy;
         letter-spacing: 8px;
     }
+    &.lv-1{
+        .container{
+            width: 80%;
+        }
+    }
 }
 .level-1{
     background-image: none;
@@ -1828,7 +1850,7 @@ section{
         }
     }
 }
-.payment, .payment-order{
+.payment, .payment-order, .unleashed{
     .box-instans{
         display: flex;
         flex-wrap: wrap;
@@ -2365,7 +2387,7 @@ span {
     
 }
 .about-section{
-    padding-top: 10px;
+    padding-top: 40px;
     padding-bottom: 70px;
     .container{
         width: 60%;
@@ -2906,7 +2928,7 @@ span {
                 position: absolute;
                 color: $navy;
                 z-index: 2;
-                left: 38%;
+                left: 44%;
                 bottom: -15px;
                 font-style: italic;
                 padding-left: 0px;
@@ -3933,7 +3955,7 @@ span {
             .more{
                 &-link{
                     width: 100%;
-                    &::before{
+                    &::after{
                         width: 190px;
                         height: 40px;
                         z-index: -1;

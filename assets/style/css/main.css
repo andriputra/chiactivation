@@ -280,6 +280,12 @@ section {
   margin-bottom: 50px;
   font-weight: 900;
 }
+.second.lv-1 .container {
+  width: 80%;
+}
+.second.lv-1 .container .paragraph p.text-content::after {
+  left: 43%;
+}
 .second .container {
   width: 50%;
 }
@@ -618,7 +624,7 @@ section {
   color: #171717;
   position: relative;
 }
-.sixth .more .more-link::before {
+.sixth .more .more-link::after {
   content: "";
   background-image: url("../../img/strok-strong.png");
   background-repeat: no-repeat;
@@ -629,6 +635,9 @@ section {
   left: 0px;
   z-index: -1;
   top: -8px;
+}
+.sixth .more .more-link:hover {
+  cursor: pointer;
 }
 .sixth.activation.level-2 {
   background-color: #EEEAF4;
@@ -1341,6 +1350,9 @@ section {
   color: #3B3559;
   letter-spacing: 8px;
 }
+.level-up.lv-1 .container {
+  width: 80%;
+}
 
 .level-1 {
   background-image: none;
@@ -1808,32 +1820,32 @@ section {
   column-count: 1;
 }
 
-.payment .box-instans, .payment-order .box-instans {
+.payment .box-instans, .payment-order .box-instans, .unleashed .box-instans {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.payment .box-instans-item, .payment-order .box-instans-item {
+.payment .box-instans-item, .payment-order .box-instans-item, .unleashed .box-instans-item {
   border: 1px solid #171717;
   padding: 20px;
   border-radius: 10px;
   flex: 1 0 0;
   margin: 0px 10px;
 }
-.payment .box-instans-item p, .payment-order .box-instans-item p {
+.payment .box-instans-item p, .payment-order .box-instans-item p, .unleashed .box-instans-item p {
   margin: 0px 0px 5px;
 }
-.payment .box-instans-item .link, .payment-order .box-instans-item .link {
+.payment .box-instans-item .link, .payment-order .box-instans-item .link, .unleashed .box-instans-item .link {
   position: relative;
   display: inline-block;
   margin-top: 30px;
 }
-.payment .box-instans-item .link .link-btn, .payment-order .box-instans-item .link .link-btn {
+.payment .box-instans-item .link .link-btn, .payment-order .box-instans-item .link .link-btn, .unleashed .box-instans-item .link .link-btn {
   color: #171717;
   position: relative;
   z-index: 1;
 }
-.payment .box-instans-item .link .link-btn::after, .payment-order .box-instans-item .link .link-btn::after {
+.payment .box-instans-item .link .link-btn::after, .payment-order .box-instans-item .link .link-btn::after, .unleashed .box-instans-item .link .link-btn::after {
   content: "";
   background-size: contain;
   background-image: url("../../img/strok-strong.png");
@@ -2333,7 +2345,7 @@ span.text-pink.ball {
 }
 
 .about-section {
-  padding-top: 10px;
+  padding-top: 40px;
   padding-bottom: 70px;
 }
 .about-section .container {
@@ -2865,7 +2877,7 @@ span.text-pink.ball {
   position: absolute;
   color: #3B3559;
   z-index: 2;
-  left: 38%;
+  left: 44%;
   bottom: -15px;
   font-style: italic;
   padding-left: 0px;
@@ -3729,7 +3741,7 @@ span.text-pink.ball {
   .sixth .more .more-link {
     width: 100%;
   }
-  .sixth .more .more-link::before {
+  .sixth .more .more-link::after {
     width: 190px;
     height: 40px;
     z-index: -1;
