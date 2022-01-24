@@ -127,7 +127,7 @@ body {
 }
 
 .paragraph {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 section {
@@ -2548,6 +2548,15 @@ span.text-pink.ball {
 }
 .faq-3 .content-faq {
   margin-bottom: 0px;
+}
+
+.map {
+  padding: 0px;
+  margin-bottom: -10px;
+}
+
+.contact {
+  padding-bottom: 50px;
 }
 
 .faq-4 {
