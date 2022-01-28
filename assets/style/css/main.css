@@ -22,7 +22,7 @@ p, small, a, form, input, textarea, option, .copyright {
 }
 
 p {
-  line-height: 42px !important;
+  line-height: 38px !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -126,8 +126,14 @@ body {
   color: #F6F5F0;
 }
 
+p {
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
 .paragraph {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 section {
@@ -205,6 +211,7 @@ section {
   font-size: 90px;
   color: #3B3559;
   margin-top: 20px;
+  line-height: 100px;
   display: block;
 }
 
@@ -328,6 +335,7 @@ section {
 .second h4 {
   color: #E49FC6;
   font-size: 26px;
+  margin-bottom: 20px;
 }
 .second .paragraph {
   margin-bottom: 30px;
@@ -460,10 +468,6 @@ section {
 .fourth {
   padding-top: 100px;
 }
-.fourth .paragraph p {
-  column-count: 2;
-  column-gap: 30px;
-}
 .fourth .more {
   position: relative;
   width: 63%;
@@ -520,10 +524,6 @@ section {
   text-align: center;
   text-transform: uppercase;
   font-size: 35px;
-}
-.fifth .paragraph p {
-  column-count: 2;
-  column-gap: 30px;
 }
 .fifth .more {
   position: relative;
@@ -593,13 +593,13 @@ section {
   top: -150px;
   background-repeat: no-repeat;
 }
-.sixth .paragraph p {
-  column-count: 2;
-  column-gap: 30px;
-}
 .sixth .paragraph p span.pink {
   text-transform: uppercase;
-  color: #E49FC6;
+  color: #f071b9;
+  font-family: "Magnat-HeadRegular";
+  font-size: 21px;
+  font-weight: 700;
+  font-style: italic;
 }
 .sixth .more {
   position: relative;
@@ -904,10 +904,6 @@ section {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-.second.understanding .paragraph p {
-  column-count: 2;
-  column-gap: 30px;
-}
 .second.understanding .paragraph p span.quote {
   font-family: "Open Sans", sans-serif;
 }
@@ -964,10 +960,6 @@ section {
   text-align: center;
   text-transform: uppercase;
   font-size: 35px;
-}
-.fifth.understanding .paragraph p {
-  column-count: 2;
-  column-gap: 30px;
 }
 
 .sixth.understanding {
@@ -1059,10 +1051,6 @@ section {
 }
 .seventh.understanding .container .paragraph {
   position: relative;
-}
-.seventh.understanding .container .paragraph p {
-  column-count: 2;
-  column-gap: 30px;
 }
 .seventh.understanding .container .paragraph p .more {
   display: block;
@@ -1241,6 +1229,7 @@ section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 30px;
 }
 .activation .paragraph .column-half p {
   margin: 0px;
@@ -1545,10 +1534,6 @@ section {
 .healing .paragraph h2 {
   margin-bottom: 30px;
   letter-spacing: 5px;
-}
-.healing .paragraph p {
-  column-count: 2;
-  column-gap: 30px;
 }
 
 .intuitive {

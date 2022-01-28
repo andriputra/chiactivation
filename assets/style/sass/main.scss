@@ -61,8 +61,13 @@ body {
 ::placeholder {
     color: $light;
 }
+p{
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
 .paragraph{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 section{
     padding: 100px 0px;
@@ -140,6 +145,7 @@ section{
             font-size: 90px;
             color: $navy;
             margin-top: 20px;
+            line-height: 100px;
             display: block;
         }
     }
@@ -285,6 +291,7 @@ section{
     h4{
         color: $pink;
         font-size: 26px;
+        margin-bottom: 20px;
     }
     .paragraph{
         margin-bottom: 30px;
@@ -419,12 +426,6 @@ section{
 }
 .fourth{
     padding-top: 100px;
-    .paragraph{
-        p{
-            column-count: 2;
-            column-gap: 30px;
-        }
-    }
     .more{
         position: relative;
         width: 63%;
@@ -480,12 +481,6 @@ section{
         text-align: center;
         text-transform: uppercase;
         font-size: 35px;
-    }
-    .paragraph{
-        p{
-            column-count: 2;
-            column-gap: 30px;
-        }
     }
     .more{
         position: relative;
@@ -556,12 +551,14 @@ section{
     }
     .paragraph{
         p{
-            column-count: 2;
-            column-gap: 30px;
             span{
                 &.pink{
                     text-transform: uppercase;
-                    color: $pink;
+                    color: #f071b9;
+                    font-family: "Magnat-HeadRegular";
+                    font-size: 21px;
+                    font-weight: 700;
+                    font-style: italic;
                 }
             }
         }
@@ -887,8 +884,6 @@ section{
         }
         .paragraph{
             p{
-                column-count: 2;
-                column-gap: 30px;
                 span{
                     &.quote{
                         font-family: 'Open Sans', sans-serif;
@@ -956,12 +951,6 @@ section{
             text-align: center;
             text-transform: uppercase;
             font-size: 35px;
-        }
-        .paragraph{
-            p{
-                column-count: 2;
-                column-gap: 30px;
-            }
         }
     }
 }
@@ -1069,8 +1058,6 @@ section{
             .paragraph{
                 position: relative;
                 p{
-                    column-count: 2;
-                    column-gap: 30px;
                     .more{
                         display: block;
                         margin-bottom: 44px;
@@ -1253,6 +1240,7 @@ section{
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            margin-bottom: 30px;
             &-half{
                 p{
                     margin: 0px;
@@ -1562,10 +1550,6 @@ section{
         h2{
             margin-bottom: 30px;
             letter-spacing: 5px;
-        }
-        p{
-            column-count: 2;
-            column-gap: 30px;
         }
     }
 }
