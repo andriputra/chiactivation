@@ -124,6 +124,21 @@ section{
                     width: 100%;
                 }
             }
+            &.btn-tel{
+                background: #3b3559;
+                color: #ffffff;
+                display: inline-block;
+                width: 8%;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 8px;
+                &:hover{
+                    background-color: pink;
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
         }
     }
 }
@@ -369,8 +384,7 @@ section{
         background-image: url('../../img/flower-bg.png');
         background-repeat: repeat-x;
         width: 100%;
-        height: 394px;
-        background-position: 0px -166px;
+        height: 280px;
     }
 }
 .third{
@@ -1339,8 +1353,7 @@ section{
 }
 .level1-add{
     padding-top: 200px;
-    background-position: center -500px;
-    background-size: auto;
+    background-position: center 0px;
 }
 .program{
     background: transparent;
@@ -1532,19 +1545,17 @@ section{
     }
 }
 .healing{
-    padding: 100px 0px 350px;
+    padding: 100px 0px 250px;
     background-color: #F5EAED;
     position: relative;
     &::after{
         content: '';
-        background-image: url('../../img/flower-bg-long.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 340px;
+        background-image: url('../../img/flower-bg.png');
+        background-repeat: repeat-x;
+        height: 280px;
         width: 100%;
         position: absolute;
         bottom: 0px;
-        background-position: 0px -104px;
     }
     .paragraph{
         h2{
