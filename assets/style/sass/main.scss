@@ -128,7 +128,7 @@ section{
                 background: #3b3559;
                 color: #ffffff;
                 display: inline-block;
-                width: 8%;
+                width: 13%;
                 text-align: center;
                 font-size: 16px;
                 border-radius: 8px;
@@ -136,6 +136,12 @@ section{
                     background-color: pink;
                     &::after{
                         content: none;
+                    }
+                }
+                &.no-hover{
+                    &:hover{
+                        pointer-events: none;
+                        background-color: #3b3559;
                     }
                 }
             }
