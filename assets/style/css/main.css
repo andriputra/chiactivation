@@ -1679,10 +1679,6 @@ section {
   color: #3B3559;
   font-size: 32px;
 }
-.level-2 .paragraph p {
-  column-count: 2;
-  column-gap: 30px;
-}
 .level-2 .butterfly {
   background: url("../../img/butterfly-pink.svg") no-repeat;
   background-size: contain;
@@ -1697,19 +1693,15 @@ section {
   padding: 100px 0px 300px;
   position: relative;
 }
-.expanding .paragraph h2 {
+.expanding h2 {
   letter-spacing: 5px;
   font-size: 35px;
 }
-.expanding .paragraph h2 span {
+.expanding h2 span {
   font-family: "Dancing Script", cursive;
   text-transform: lowercase;
   letter-spacing: normal;
   font-size: 50px;
-}
-.expanding .paragraph p {
-  column-gap: 30px;
-  column-count: 2;
 }
 .expanding::after {
   content: "";
@@ -1784,13 +1776,6 @@ section {
 }
 .abilities .container {
   width: 60%;
-}
-.abilities .paragraph h2 {
-  letter-spacing: 5px;
-}
-.abilities .paragraph p {
-  column-gap: 30px;
-  column-count: 2;
 }
 .abilities .paragraph p a {
   color: #3B3559;
