@@ -8,7 +8,8 @@ body {
     line-height: 36px;
     text-decoration: none;
     font-weight: normal;
-    background-color: #F8F4F4;
+    // background-color: #F8F4F4;
+    background-color: $white;
     color: $blackLight;
     position: relative;
     z-index: -1;
@@ -44,11 +45,23 @@ body {
 .ls-5{
     letter-spacing: 5px;
 }
+.mt-25{
+    margin-top: 25px !important;
+}
+.mb-25{
+    margin-bottom: 25px !important;
+}
 .top-content{
-    background-image: url('../../img/bg-main.png');
+    background-image: url('../../img/banner-subpage.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 857px;
+    height: 100%;
+    &.homepage{
+        background-image: url('../../img/banner-homepage.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 743px;
+    }
 }
 ::-webkit-input-placeholder { /* Edge */
     color: $light;
@@ -1433,9 +1446,10 @@ section{
             }
             &.text-content{
                 position: relative;
-                margin-bottom: 250px;
+                margin-bottom: 0px;
                 &::after{
-                    content: '';
+                    content: none;
+                    // content: '';
                     background-image: url('../../img/butterfly-blue.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
@@ -1715,14 +1729,16 @@ section{
     background-color: #F5EAED;
     padding: 100px 0px 300px;
     position: relative;
-    h2{
-        letter-spacing: 5px;
-        font-size: 35px;
-        span{
-            font-family: 'Dancing Script', cursive;
-            text-transform: lowercase;
-            letter-spacing: normal;
-            font-size: 50px;
+    .paragraph{
+        h2{
+            letter-spacing: 5px;
+            font-size: 35px;
+            span{
+                font-family: 'Dancing Script', cursive;
+                text-transform: lowercase;
+                letter-spacing: normal;
+                font-size: 50px;
+            }
         }
     }
     &::after{
@@ -1804,7 +1820,12 @@ section{
         width: 60%;
     }
     .paragraph{
+        h2{
+            letter-spacing: 5px;
+        }
         p{
+            column-gap: 30px;
+            column-count: 2;
             a{
                 color: $navy;
                 text-transform: uppercase;
@@ -1892,6 +1913,31 @@ section{
                         z-index: -1;
                     }
                 }
+            }
+        }
+    }
+}
+.link{
+    &.chackra{
+        position: relative;
+        display: block;
+        margin: 20px 0px 20px 80px;
+        .link-btn{
+            color: $blackDark;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: '';
+                background-size: contain;
+                background-image: url('../../img/strok-strong.png');
+                background-repeat: no-repeat;
+                display: block;
+                width: 300px;
+                height: 65px;
+                position: absolute;
+                left: -98px;
+                top: -12px;
+                z-index: -1;
             }
         }
     }
@@ -3671,6 +3717,22 @@ span {
         }
     }
 }
+.grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .column{
+        &-half{
+            width: 50%;
+            p{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+
 @media (min-width: 320px) and (max-width: 767px) {
     .mobile{
         display: block;

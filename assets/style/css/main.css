@@ -59,7 +59,7 @@ body {
   line-height: 36px;
   text-decoration: none;
   font-weight: normal;
-  background-color: #F8F4F4;
+  background-color: #ffffff;
   color: #505050;
   position: relative;
   z-index: -1;
@@ -105,11 +105,25 @@ body {
   letter-spacing: 5px;
 }
 
+.mt-25 {
+  margin-top: 25px !important;
+}
+
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+
 .top-content {
-  background-image: url("../../img/bg-main.png");
+  background-image: url("../../img/banner-subpage.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 857px;
+  height: 100%;
+}
+.top-content.homepage {
+  background-image: url("../../img/banner-homepage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 743px;
 }
 
 ::-webkit-input-placeholder {
@@ -1419,10 +1433,10 @@ section {
 }
 .level-1 .paragraph p.text-content {
   position: relative;
-  margin-bottom: 250px;
+  margin-bottom: 0px;
 }
 .level-1 .paragraph p.text-content::after {
-  content: "";
+  content: none;
   background-image: url("../../img/butterfly-blue.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1693,11 +1707,11 @@ section {
   padding: 100px 0px 300px;
   position: relative;
 }
-.expanding h2 {
+.expanding .paragraph h2 {
   letter-spacing: 5px;
   font-size: 35px;
 }
-.expanding h2 span {
+.expanding .paragraph h2 span {
   font-family: "Dancing Script", cursive;
   text-transform: lowercase;
   letter-spacing: normal;
@@ -1777,6 +1791,13 @@ section {
 .abilities .container {
   width: 60%;
 }
+.abilities .paragraph h2 {
+  letter-spacing: 5px;
+}
+.abilities .paragraph p {
+  column-gap: 30px;
+  column-count: 2;
+}
 .abilities .paragraph p a {
   color: #3B3559;
   text-transform: uppercase;
@@ -1850,6 +1871,30 @@ section {
   z-index: 1;
 }
 .payment .box-instans-item .link .link-btn::after, .payment-order .box-instans-item .link .link-btn::after, .unleashed .box-instans-item .link .link-btn::after {
+  content: "";
+  background-size: contain;
+  background-image: url("../../img/strok-strong.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 300px;
+  height: 65px;
+  position: absolute;
+  left: -98px;
+  top: -12px;
+  z-index: -1;
+}
+
+.link.chackra {
+  position: relative;
+  display: block;
+  margin: 20px 0px 20px 80px;
+}
+.link.chackra .link-btn {
+  color: #171717;
+  position: relative;
+  z-index: 1;
+}
+.link.chackra .link-btn::after {
   content: "";
   background-size: contain;
   background-image: url("../../img/strok-strong.png");
@@ -3491,6 +3536,19 @@ span.text-pink.ball {
     top: -8px;
   }
 }
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.grid .column-half {
+  width: 50%;
+}
+.grid .column-half p {
+  font-size: 22px;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .mobile {
     display: block;
