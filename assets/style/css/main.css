@@ -117,13 +117,13 @@ body {
   background-image: url("../../img/banner-subpage.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 539px;
 }
 .top-content.homepage {
   background-image: url("../../img/banner-homepage.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 743px;
+  height: 750px;
 }
 
 ::-webkit-input-placeholder {
@@ -232,19 +232,22 @@ section {
 .head-hero .logo-center {
   margin-bottom: 30px;
 }
+.head-hero .logo-center img {
+  width: 8%;
+}
 .head-hero h1 {
-  font-size: 70px;
+  font-size: 55px;
+  line-height: 60px;
   color: #3B3559;
   margin-bottom: 0px;
   text-transform: uppercase;
-  line-height: 99px;
 }
 .head-hero span.head-title-page {
   font-family: "Dancing Script", cursive;
-  font-size: 90px;
+  font-size: 70px;
   color: #3B3559;
   margin-top: 20px;
-  line-height: 100px;
+  line-height: 90px;
   display: block;
 }
 
@@ -914,6 +917,7 @@ section {
 }
 .second.understanding {
   position: relative;
+  padding-top: 0px;
 }
 .second.understanding .container {
   width: 50%;
@@ -1887,7 +1891,7 @@ section {
 .link.chackra {
   position: relative;
   display: block;
-  margin: 20px 0px 20px 80px;
+  margin: 10px 0px 20px;
 }
 .link.chackra .link-btn {
   color: #171717;
@@ -2292,7 +2296,8 @@ span.text-pink.ball {
 }
 
 .meditation-one {
-  background-color: #F8F4F4;
+  background-color: #ffffff;
+  padding-top: 0px;
 }
 .meditation-one .top-ornament::after, .meditation-one .top-ornament::before {
   top: 30px;
@@ -2499,6 +2504,7 @@ span.text-pink.ball {
 
 .faq-1 {
   position: relative;
+  padding-top: 0px;
 }
 .faq-1 .container {
   width: 50%;
@@ -2586,6 +2592,7 @@ span.text-pink.ball {
 }
 
 .contact {
+  padding-top: 0px;
   padding-bottom: 50px;
 }
 
@@ -2765,6 +2772,7 @@ span.text-pink.ball {
 .testi-page {
   position: relative;
   background-image: none;
+  padding-top: 0px;
 }
 .testi-page.top::before, .testi-page.top::after {
   content: "";
@@ -2912,6 +2920,9 @@ span.text-pink.ball {
   margin-bottom: 10px;
 }
 
+.blog-page {
+  padding-top: 100px;
+}
 .blog-page::after {
   content: none !important;
 }
@@ -3540,7 +3551,7 @@ span.text-pink.ball {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 .grid .column-half {
   width: 50%;
@@ -3548,10 +3559,35 @@ span.text-pink.ball {
 .grid .column-half p {
   font-size: 22px;
 }
+.grid .column-one-fourth {
+  width: 75%;
+}
+.grid .column-last {
+  width: 25%;
+}
+
+.box-rounded {
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+}
+.box-rounded h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
   .mobile {
     display: block;
+  }
+
+  .paragraph.desktop {
+    display: none;
   }
 
   h1 {
@@ -4527,6 +4563,33 @@ span.text-pink.ball {
     overflow: hidden;
     border-bottom: 1px solid #ffffff;
     transition: max-height 0.2s ease-out;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+  .grid .column-one-fourth {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .grid .column-last {
+    width: 100%;
+  }
+  .grid .column-last .box-rounded {
+    margin-bottom: 30px;
+  }
+
+  .level-1.lv-1 {
+    padding-top: 50px;
+  }
+  .level-1.lv-1 h2 {
+    letter-spacing: 5px;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+  .level-1.lv-1 p {
+    text-align: center !important;
   }
 }
 

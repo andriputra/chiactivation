@@ -55,12 +55,12 @@ body {
     background-image: url('../../img/banner-subpage.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 539px;
     &.homepage{
         background-image: url('../../img/banner-homepage.png');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 743px;
+        height: 750px;
     }
 }
 ::-webkit-input-placeholder { /* Edge */
@@ -165,21 +165,28 @@ section{
     text-align: center;
     .logo-center{
         margin-bottom: 30px;
+        img{
+            width: 8%;
+        }
     }
     h1{
-        font-size: 70px;
+        // font-size: 70px;
+        font-size: 55px;
+        line-height: 60px;
         color: $navy;
         margin-bottom: 0px;
         text-transform: uppercase;
-        line-height: 99px;
+        // line-height: 99px;
     }
     span{
         &.head-title-page{
             font-family: 'Dancing Script', cursive;
-            font-size: 90px;
+            // font-size: 90px;
+            font-size: 70px;
             color: $navy;
             margin-top: 20px;
-            line-height: 100px;
+            // line-height: 100px;
+            line-height: 90px;
             display: block;
         }
     }
@@ -891,6 +898,7 @@ section{
     padding-bottom: 0px;
     &.understanding{
         position: relative;
+        padding-top: 0px;
         .container{
             width: 50%;
         }
@@ -1921,7 +1929,7 @@ section{
     &.chackra{
         position: relative;
         display: block;
-        margin: 20px 0px 20px 80px;
+        margin: 10px 0px 20px;
         .link-btn{
             color: $blackDark;
             position: relative;
@@ -2336,7 +2344,9 @@ span {
     }
 }
 .meditation-one{
-    background-color: #F8F4F4;
+    // background-color: #F8F4F4;
+    background-color: #ffffff;
+    padding-top: 0px;
     .top-ornament{
         &::after, &::before{
             top: 30px;
@@ -2544,6 +2554,7 @@ span {
 }
 .faq-1{
     position: relative;
+    padding-top: 0px;
     .container{
         width: 50%;
     }
@@ -2629,6 +2640,7 @@ span {
     margin-bottom: -10px;
 }
 .contact{
+    padding-top: 0px;
     padding-bottom: 50px;
 }
 .faq-4{
@@ -2805,6 +2817,7 @@ span {
 .testi-page{
     position: relative;
     background-image: none;
+    padding-top: 0px;
     &.top{
         &::before,&::after{
             content: '';
@@ -2967,6 +2980,7 @@ span {
     }
 }
 .blog-page{
+    padding-top: 100px;
     &::after{
         content: none !important;
     }
@@ -3721,7 +3735,7 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     .column{
         &-half{
             width: 50%;
@@ -3729,13 +3743,37 @@ span {
                 font-size: 22px;
             }
         }
+        &-one-fourth{
+            width: 75%;
+        }
+        &-last{
+            width: 25%;
+        }
     }
 }
-
+.box-rounded{
+    padding: 20px;
+    background: rgb(255 255 255);
+    border-radius: 15px;
+    // border: 2px solid #ede4ee;
+    text-align: center;
+    h4{
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+.mr-20{
+    margin-right: 20px;
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
     .mobile{
         display: block;
+    }
+    .paragraph{
+        &.desktop{
+            display: none;
+        }
     }
     h1{
         font-size: 28px !important;
@@ -4902,5 +4940,34 @@ span {
         overflow: hidden;
         border-bottom: 1px solid #ffffff;
         transition: max-height 0.2s ease-out;
+    }
+    .grid{
+        flex-direction: column;
+        .column{
+            &-one-fourth{
+                width: 100%;
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+            &-last{
+                width: 100%;
+                .box-rounded{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .level-1{
+        &.lv-1{
+            padding-top: 50px;
+            h2{
+                letter-spacing: 5px;
+                margin-bottom: 20px !important;
+                text-align: center !important;
+            }
+            p{
+                text-align: center !important;
+            }
+        }
     }
 }
